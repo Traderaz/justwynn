@@ -30,11 +30,6 @@ const trustIcons = {
 };
 
 export default function Home() {
-  const [isEmailModalOpen, setIsEmailModalOpen] = useState(false);
-
-  const handleJoinClick = () => {
-    setIsEmailModalOpen(true);
-  };
 
   return (
     <div className="min-h-screen bg-[#0B0D10]">
@@ -574,7 +569,7 @@ export default function Home() {
               Milestone Games — Play to Win
             </h2>
             <p className="text-lg text-[#A6B0BF] max-w-4xl mx-auto">
-              When a token hits major milestones—like $1M market cap or 1,000 holders—The House unlocks games for that community's holders.
+              When a token hits major milestones—like $1M market cap or 1,000 holders—The House unlocks games for that community&apos;s holders.
             </p>
           </motion.div>
 
@@ -679,7 +674,7 @@ export default function Home() {
                   { 
                     icon: "🏆", 
                     title: "Weekly Rewards", 
-                    description: "The strongest community's holders receive reward pools directly from The House"
+                    description: "The strongest community&apos;s holders receive reward pools directly from The House"
                   },
                   { 
                     icon: "📅", 
