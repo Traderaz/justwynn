@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# JUSTWYNN
+
+The ultimate gaming platform for token launches and competitions.
+
+## Tech Stack
+
+- **Next.js 14** with App Router
+- **TypeScript** for type safety
+- **Tailwind CSS** for styling
+- **Google Fonts**: Orbitron (headings) and Inter (body text)
+
+## Design Tokens
+
+- **Brand**: `#4E6A54` - Primary brand color
+- **Background**: `#000000` - Dark background
+- **Text**: `#E6F2E7` - Light text color
+- **Muted**: `#9FB6A5` - Secondary text color
+- **Glow**: `rgba(78,106,84,0.45)` - Glow effect color
 
 ## Getting Started
 
-First, run the development server:
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+2. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## Project Structure
+
+```
+src/
+├── app/
+│   ├── globals.css          # Global styles and theme configuration
+│   ├── layout.tsx           # Root layout with Navbar and Footer
+│   └── page.tsx             # Home page
+└── components/
+    ├── Navbar.tsx           # Navigation component
+    └── Footer.tsx           # Footer component
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Responsive Design**: Mobile-first approach with Tailwind CSS
+- **Custom Theme**: Dark theme with brand-specific colors
+- **Typography**: Orbitron for headings (700/800) and Inter for body text (400/600)
+- **Navigation**: Full navigation with mobile hamburger menu
+- **Glow Effects**: Custom glow effects for brand elements
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Navigation Links
 
-## Learn More
+- Home
+- Features
+- The House
+- Milestone Games
+- The House Cup
+- Hall of Fame
+- FAQ
+- Get Started
+- Launch a Token (CTA)
 
-To learn more about Next.js, take a look at the following resources:
+## Development
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Linting**: ESLint configured
+- **TypeScript**: Strict type checking enabled
+- **Tailwind**: Custom configuration with brand tokens
