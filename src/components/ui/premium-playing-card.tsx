@@ -181,7 +181,13 @@ export const PremiumPlayingCard = memo(function PremiumPlayingCard({
               {title && (
                 <div className="space-y-1 sm:space-y-2">
                   <h3 className="text-xs sm:text-sm font-bold text-gray-800 leading-tight">
-                    {title}
+                    {title?.includes('JUSTWYNN') ? (
+                      <span dangerouslySetInnerHTML={{
+                        __html: title.replace('JUSTWYNN', '<span style="color: #00B366;">JUSTWYNN</span>')
+                      }} />
+                    ) : (
+                      title
+                    )}
                   </h3>
                   {description && (
                     <p className="text-xs text-gray-600 leading-tight">

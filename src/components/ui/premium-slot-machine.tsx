@@ -188,7 +188,7 @@ export const PremiumSlotMachine = memo(function PremiumSlotMachine({
               animate={{ opacity: showJackpot ? [1, 0.5, 1] : 1 }}
               transition={{ duration: 0.8, repeat: showJackpot ? Infinity : 0 }}
             >
-              JUSTWYNN SLOTS
+              <span style={{ color: '#00B366', textShadow: '0 0 10px rgba(0, 179, 102, 0.5)' }}>JUSTWYNN</span> SLOTS
             </motion.div>
             <div className="text-sm text-[#A6B0BF]">Milestone Games</div>
           </div>

@@ -24,10 +24,10 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link 
               href="/" 
-              className="text-xl text-casino-gold font-bold tracking-wide hover:text-casino-gold/80 transition-all duration-300"
+              className="text-xl text-casino-green font-bold tracking-wide hover:text-casino-green/80 transition-all duration-300"
               style={{ 
                 fontFamily: 'var(--font-space-grotesk)',
-                textShadow: '0 0 8px rgba(245, 158, 11, 0.4)'
+                textShadow: '0 0 10px rgba(0, 179, 102, 0.5)'
               }}
             >
               JUSTWYNN

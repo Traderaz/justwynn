@@ -48,23 +48,13 @@ export default function Home() {
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             <h1 
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 text-casino-green"
               style={{ 
-                fontFamily: 'var(--font-space-grotesk)'
+                fontFamily: 'var(--font-space-grotesk)',
+                textShadow: '0 0 30px rgba(0, 179, 102, 0.4), 0 0 60px rgba(0, 179, 102, 0.2)'
               }}
             >
-              <span 
-                className="text-casino-gold"
-                style={{ textShadow: '0 0 30px rgba(245, 158, 11, 0.4), 0 0 60px rgba(245, 158, 11, 0.2)' }}
-              >
-                JUST
-              </span>
-              <span 
-                className="text-casino-green"
-                style={{ textShadow: '0 0 30px rgba(0, 179, 102, 0.4), 0 0 60px rgba(0, 179, 102, 0.2)' }}
-              >
-                WYNN
-              </span>
+              JUSTWYNN
             </h1>
           </motion.div>
           
@@ -846,7 +836,13 @@ export default function Home() {
                         {item.title}
                       </h3>
                       <p className="text-[#A6B0BF] leading-relaxed">
-                        {item.description}
+                        {item.description?.includes('JUSTWYNN') ? (
+                          <span dangerouslySetInnerHTML={{
+                            __html: item.description.replace('JUSTWYNN', '<span style="color: #00B366; text-shadow: 0 0 10px rgba(0, 179, 102, 0.5);">JUSTWYNN</span>')
+                          }} />
+                        ) : (
+                          item.description
+                        )}
                       </p>
                     </div>
                   </motion.div>

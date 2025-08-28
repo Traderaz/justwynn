@@ -19,16 +19,16 @@ const Footer = () => {
           <div className="flex flex-col items-center md:items-start mb-4 md:mb-0">
             <Link 
               href="/" 
-              className="text-xl text-casino-gold font-bold tracking-wide mb-2 hover:text-casino-gold/80 transition-colors"
+              className="text-xl text-casino-green font-bold tracking-wide mb-2 hover:text-casino-green/80 transition-colors"
               style={{ 
                 fontFamily: 'var(--font-space-grotesk)',
-                textShadow: '0 0 10px rgba(245, 158, 11, 0.3)'
+                textShadow: '0 0 10px rgba(0, 179, 102, 0.5)'
               }}
             >
               JUSTWYNN
             </Link>
             <p className="text-[#A6B0BF] text-sm" style={{ fontFamily: 'var(--font-inter)' }}>
-              © {currentYear} JUSTWYNN. All rights reserved.
+              © {currentYear} <span className="text-casino-green" style={{ textShadow: '0 0 10px rgba(0, 179, 102, 0.5)' }}>JUSTWYNN</span>. All rights reserved.
             </p>
           </div>
 
