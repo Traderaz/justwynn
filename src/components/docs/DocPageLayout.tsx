@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { ChevronLeftIcon } from '@heroicons/react/24/outline';
 import DocsSidebar from './DocsSidebar';
+import { CasinoBackground } from '@/components/ui/casino-background';
 
 interface DocPageLayoutProps {
   children: React.ReactNode;
@@ -30,15 +31,18 @@ export default function DocPageLayout({
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
-    <div className="min-h-screen bg-[#0B0D10] flex">
-      {/* Sidebar */}
-      <DocsSidebar 
-        isOpen={isSidebarOpen} 
-        onClose={() => setIsSidebarOpen(false)} 
-      />
+    <div className="min-h-screen bg-[#0B0D10] relative">
+      <CasinoBackground />
+      
+      <div className="flex relative z-10">
+        {/* Sidebar */}
+        <DocsSidebar 
+          isOpen={isSidebarOpen} 
+          onClose={() => setIsSidebarOpen(false)} 
+        />
 
-      {/* Main Content */}
-      <div className="flex-1 lg:ml-0">
+        {/* Main Content */}
+        <div className="flex-1 lg:ml-0">
         {/* Mobile header */}
         <div className="lg:hidden flex items-center justify-between p-4 border-b border-casino-gold/10">
           <button
@@ -61,7 +65,7 @@ export default function DocPageLayout({
           </Link>
         </div>
 
-        <main className="max-w-4xl mx-auto px-6 py-8">
+        <main className="max-w-5xl mx-auto px-6 py-8">
           {/* Back button */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
@@ -71,10 +75,13 @@ export default function DocPageLayout({
           >
             <Link 
               href="/docs"
-              className="inline-flex items-center text-sm text-[#A6B0BF] hover:text-casino-green transition-colors"
+              className="inline-flex items-center px-4 py-2 text-sm text-casino-gold hover:text-casino-green transition-all duration-200 bg-gradient-to-r from-casino-gold/10 to-transparent rounded-lg border border-casino-gold/20 hover:border-casino-green/50"
+              style={{
+                boxShadow: '0 2px 8px rgba(245, 158, 11, 0.1)'
+              }}
             >
-              <ChevronLeftIcon className="w-4 h-4 mr-1" />
-              Back to docs
+              <ChevronLeftIcon className="w-4 h-4 mr-2" />
+              Back to Documentation
             </Link>
           </motion.div>
 
@@ -83,7 +90,10 @@ export default function DocPageLayout({
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="prose prose-invert prose-casino max-w-none"
+            className="bg-gradient-to-br from-[#0B0D10]/80 to-[#1a1d23]/60 backdrop-blur-sm rounded-2xl p-8 border border-casino-gold/20 shadow-2xl"
+            style={{
+              boxShadow: '0 0 60px rgba(245, 158, 11, 0.1), inset 0 1px 0 rgba(255, 255, 255, 0.05)'
+            }}
           >
             <h1 
               className="text-4xl font-bold text-white mb-6"
@@ -107,15 +117,18 @@ export default function DocPageLayout({
             {children}
 
             {/* Next/Previous Navigation */}
-            <div className="flex justify-between items-center mt-16 pt-8 border-t border-casino-gold/10">
+            <div className="flex justify-between items-center mt-16 pt-8 border-t border-casino-gold/20">
               <div>
                 {prevPage && (
                   <Link 
                     href={prevPage.href}
-                    className="inline-flex items-center px-4 py-2 bg-casino-gold/10 text-casino-gold rounded-lg hover:bg-casino-gold/20 transition-colors"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-casino-gold/20 to-casino-gold/10 text-casino-gold rounded-xl hover:from-casino-gold/30 hover:to-casino-gold/20 transition-all duration-200 border border-casino-gold/30"
+                    style={{
+                      boxShadow: '0 4px 12px rgba(245, 158, 11, 0.2)'
+                    }}
                   >
                     <ChevronLeftIcon className="w-4 h-4 mr-2" />
-                    Previous: {prevPage.title}
+                    {prevPage.title}
                   </Link>
                 )}
               </div>
@@ -123,9 +136,12 @@ export default function DocPageLayout({
                 {nextPage && (
                   <Link 
                     href={nextPage.href}
-                    className="inline-flex items-center px-4 py-2 bg-casino-green/10 text-casino-green rounded-lg hover:bg-casino-green/20 transition-colors"
+                    className="inline-flex items-center px-6 py-3 bg-gradient-to-r from-casino-green/20 to-casino-green/10 text-casino-green rounded-xl hover:from-casino-green/30 hover:to-casino-green/20 transition-all duration-200 border border-casino-green/30"
+                    style={{
+                      boxShadow: '0 4px 12px rgba(0, 179, 102, 0.2)'
+                    }}
                   >
-                    Next: {nextPage.title}
+                    {nextPage.title}
                     <ChevronLeftIcon className="w-4 h-4 ml-2 rotate-180" />
                   </Link>
                 )}
@@ -133,6 +149,7 @@ export default function DocPageLayout({
             </div>
           </motion.article>
         </main>
+        </div>
       </div>
     </div>
   );
