@@ -101,7 +101,6 @@ export default function Home() {
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1], delay: 0.7 }}
           >
             <Button
-              onClick={handleJoinClick}
               className="casino-green hover:opacity-90 text-white border border-casino-green h-14 px-10 rounded-2xl font-bold text-lg min-w-[200px] transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               style={{ fontFamily: 'var(--font-inter)', boxShadow: '0 0 20px rgba(0, 179, 102, 0.3)' }}
             >
@@ -370,7 +369,7 @@ export default function Home() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              The House is our constantly growing, community-powered bankroll. It's funded by launch fees, trading volume (1% trading fee split internally), and a flat migration/graduation fee when projects move to main liquidity. We only fund games and rewards from inflows/yield—not principal—so The House compounds over time.
+              The House is our constantly growing, community-powered bankroll. It&apos;s funded by launch fees, trading volume (1% trading fee split internally), and a flat migration/graduation fee when projects move to main liquidity. We only fund games and rewards from inflows/yield—not principal—so The House compounds over time.
             </motion.p>
           </motion.div>
 
@@ -1026,7 +1025,6 @@ export default function Home() {
             
             <div className="flex flex-row gap-4 justify-center items-center">
               <Button
-                onClick={handleJoinClick}
                 className="casino-green hover:opacity-90 text-white border border-casino-green h-12 px-8 rounded-2xl font-semibold text-base min-w-[160px] transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
                 style={{ fontFamily: 'var(--font-inter)', boxShadow: '0 0 20px rgba(0, 179, 102, 0.3)' }}
               >
