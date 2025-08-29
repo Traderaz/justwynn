@@ -108,14 +108,14 @@ export default function Home() {
 
           {/* CTAs */}
           <motion.div 
-            className="flex flex-col sm:flex-row gap-8 sm:gap-12 justify-center items-center mb-20"
+            className="flex flex-row gap-4 sm:gap-12 justify-center items-center mb-8 sm:mb-20"
             initial={{ opacity: 0, y: 8, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1], delay: 0.7 }}
           >
             <Button
               onClick={() => setIsWaitlistOpen(true)}
-              className="casino-green hover:opacity-90 text-white border border-casino-green h-14 px-10 rounded-2xl font-bold text-lg min-w-[200px] transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
+              className="casino-green hover:opacity-90 text-white border border-casino-green h-12 sm:h-14 px-4 sm:px-10 rounded-2xl font-bold text-sm sm:text-lg min-w-[140px] sm:min-w-[200px] transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               style={{ fontFamily: 'var(--font-inter)', boxShadow: '0 0 20px rgba(0, 179, 102, 0.3)' }}
             >
               Join The List
@@ -123,7 +123,7 @@ export default function Home() {
             <Link href="/docs">
               <Button
                 variant="outline"
-                className="bg-transparent hover:bg-casino-gold/10 text-[#E9EEF5] border-2 border-casino-gold/30 hover:border-casino-gold h-14 px-10 rounded-2xl font-bold text-lg min-w-[200px] transition-all duration-200 hover:scale-105"
+                className="bg-transparent hover:bg-casino-gold/10 text-[#E9EEF5] border-2 border-casino-gold/30 hover:border-casino-gold h-12 sm:h-14 px-4 sm:px-10 rounded-2xl font-bold text-sm sm:text-lg min-w-[140px] sm:min-w-[200px] transition-all duration-200 hover:scale-105"
                 style={{ fontFamily: 'var(--font-inter)' }}
               >
                 Read the Docs
