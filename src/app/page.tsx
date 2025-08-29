@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { CasinoBackground } from "@/components/ui/casino-background";
 import { PremiumSlotMachine } from "@/components/ui/premium-slot-machine";
@@ -37,21 +38,40 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0B0D10]">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-12 sm:pt-16">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
         {/* Casino Background */}
         <CasinoBackground variant="hero" opacity={0.20} />
 
         {/* Main content */}
-        <div className="relative z-10 text-center max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 py-12 sm:py-20">
-          {/* JUSTWYNN Logo/Sign */}
+        <div className="relative z-10 text-center max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 pb-12 sm:pb-20">
+          {/* Logo */}
           <motion.div
-            className="mb-8 sm:mb-12"
-            initial={{ opacity: 0, scale: 0.95, y: -10 }}
+            className="mb-1 sm:mb-2"
+            initial={{ opacity: 0, scale: 0.9, y: -20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
+            <div className="flex justify-center">
+              <Image
+                src="/logo.png"
+                alt="JUSTWYNN Logo"
+                width={240}
+                height={240}
+                className="w-40 h-40 sm:w-48 sm:h-48 md:w-56 md:h-56 lg:w-64 lg:h-64 object-contain"
+                priority
+              />
+            </div>
+          </motion.div>
+
+          {/* JUSTWYNN Logo/Sign */}
+          <motion.div
+            className="mb-6 sm:mb-8"
+            initial={{ opacity: 0, scale: 0.95, y: -10 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
+          >
             <h1 
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 text-casino-green"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-4 sm:mb-6 text-casino-green"
               style={{ 
                 fontFamily: 'var(--font-space-grotesk)',
                 textShadow: '0 0 30px rgba(0, 179, 102, 0.4), 0 0 60px rgba(0, 179, 102, 0.2)'
