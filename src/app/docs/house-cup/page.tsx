@@ -14,13 +14,13 @@ export default function HouseCupPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Competition Overview</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            The House Cup is JUSTWYNN's flagship weekly competition where newly launched tokens compete based on community strength, volume, liquidity health, holder growth, and social traction. Winners receive reward pools funded directly by The House.
+            The House Cup is JUSTWYNN&apos;s flagship weekly competition where newly launched tokens compete based on community strength, volume, liquidity health, holder growth, and social traction. Winners receive reward pools funded directly by The House.
           </p>
           
           <div className="bg-gradient-to-r from-casino-gold/10 to-red-400/10 rounded-xl p-6 border border-casino-gold/20">
             <h3 className="text-xl font-semibold text-white mb-4">🏆 Weekly Competition</h3>
             <p className="text-[#E9EEF5] leading-relaxed">
-              Every week, tokens launched within the past 30 days compete across multiple metrics. The strongest performing communities share in reward pools that scale with The House's growth.
+              Every week, tokens launched within the past 30 days compete across multiple metrics. The strongest performing communities share in reward pools that scale with The House&apos;s growth.
             </p>
           </div>
         </section>
@@ -77,7 +77,7 @@ export default function HouseCupPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Reward Structure</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Weekly prizes are distributed to the top performing communities, with rewards scaling based on The House's current size and weekly inflows:
+            Weekly prizes are distributed to the top performing communities, with rewards scaling based on The House&apos;s current size and weekly inflows:
           </p>
           
           <div className="space-y-4">

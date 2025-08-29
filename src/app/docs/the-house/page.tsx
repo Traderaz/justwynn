@@ -7,7 +7,7 @@ export default function TheHousePage() {
   return (
     <DocPageLayout
       title="What is The House?"
-      description="Understanding JUSTWYNN's community-powered bankroll system that funds all rewards, games, and competitions."
+      description="Understanding JUSTWYNN&apos;s community-powered bankroll system that funds all rewards, games, and competitions."
       prevPage={{ title: "Launch a Token", href: "/docs/launch-token" }}
       nextPage={{ title: "Milestone Games", href: "/docs/milestone-games" }}
     >
@@ -15,13 +15,13 @@ export default function TheHousePage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">The Heart of JUSTWYNN</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            The House is JUSTWYNN's constantly growing, community-powered bankroll. It's the financial engine that powers all rewards, games, competitions, and ecosystem benefits. Unlike traditional platforms that extract value, The House creates a sustainable model where everyone benefits from platform growth.
+            The House is JUSTWYNN&apos;s constantly growing, community-powered bankroll. It&apos;s the financial engine that powers all rewards, games, competitions, and ecosystem benefits. Unlike traditional platforms that extract value, The House creates a sustainable model where everyone benefits from platform growth.
           </p>
           
           <div className="bg-gradient-to-r from-casino-green/10 to-casino-gold/10 rounded-xl p-6 border border-casino-green/20">
             <h3 className="text-xl font-semibold text-white mb-4">🏛️ Core Concept</h3>
             <p className="text-[#E9EEF5] leading-relaxed">
-              <strong>The House is owned by the community.</strong> Every participant in the JUSTWYNN ecosystem contributes to and benefits from The House's growth. It's not a company treasury—it's a shared resource that compounds over time to benefit all users.
+              <strong>The House is owned by the community.</strong> Every participant in the JUSTWYNN ecosystem contributes to and benefits from The House&apos;s growth. It&apos;s not a company treasury—it&apos;s a shared resource that compounds over time to benefit all users.
             </p>
           </div>
         </section>
@@ -86,7 +86,7 @@ export default function TheHousePage() {
                 </div>
               </div>
               <p className="text-[#E9EEF5] mb-4">
-                When successful tokens graduate to main liquidity (moving beyond JUSTWYNN's initial bonding curve), they pay a flat migration fee to The House.
+                When successful tokens graduate to main liquidity (moving beyond JUSTWYNN&apos;s initial bonding curve), they pay a flat migration fee to The House.
               </p>
               <div className="bg-red-400/5 rounded-lg p-4 border border-red-400/10">
                 <div className="flex justify-between items-center">
@@ -142,7 +142,7 @@ export default function TheHousePage() {
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-red-400/20">
               <h3 className="text-xl font-semibold text-red-400 mb-3">💰 Jackpots & Special Events</h3>
               <p className="text-[#E9EEF5] mb-4">
-                Large jackpots and special event prizes are funded from The House's accumulated reserves and yield generation.
+                Large jackpots and special event prizes are funded from The House&apos;s accumulated reserves and yield generation.
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
@@ -176,7 +176,7 @@ export default function TheHousePage() {
             </div>
             
             <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20">
-              <h4 className="font-semibold text-red-400 mb-2">❌ What We Don't Do</h4>
+              <h4 className="font-semibold text-red-400 mb-2">❌ What We Don&apos;t Do</h4>
               <ul className="text-[#E9EEF5] text-sm space-y-1">
                 <li>• Never touch The House principal for payouts</li>
                 <li>• No unsustainable reward promises</li>

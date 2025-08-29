@@ -128,7 +128,7 @@ export default function WhatIsJustwynnPage() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white mb-2">Build Community</h4>
-                      <p className="text-[#A6B0BF]">Focus on growing your token's community, market cap, and holder base. Every trade contributes to The House.</p>
+                      <p className="text-[#A6B0BF]">Focus on growing your token&apos;s community, market cap, and holder base. Every trade contributes to The House.</p>
                     </div>
                   </div>
                   
@@ -147,10 +147,10 @@ export default function WhatIsJustwynnPage() {
               <section>
                 <h2 className="text-2xl font-bold text-casino-gold mb-4">Why JUSTWYNN?</h2>
                 <p className="text-[#E9EEF5] leading-relaxed mb-4">
-                  JUSTWYNN isn't just another launchpad—it's a complete ecosystem that aligns incentives between token creators, holders, and the platform itself. By feeding all activity into The House, we create a sustainable model where success breeds more success, and every participant benefits from the platform's growth.
+                  JUSTWYNN isn&apos;t just another launchpad—it&apos;s a complete ecosystem that aligns incentives between token creators, holders, and the platform itself. By feeding all activity into The House, we create a sustainable model where success breeds more success, and every participant benefits from the platform&apos;s growth.
                 </p>
                 <p className="text-[#E9EEF5] leading-relaxed">
-                  Whether you're launching your first token or you're a seasoned holder looking for the next big opportunity, JUSTWYNN provides the tools, community, and rewards structure to turn launches into lasting success stories.
+                  Whether you&apos;re launching your first token or you&apos;re a seasoned holder looking for the next big opportunity, JUSTWYNN provides the tools, community, and rewards structure to turn launches into lasting success stories.
                 </p>
               </section>
             </div>

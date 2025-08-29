@@ -79,8 +79,8 @@ export default function LaunchTokenPage() {
                   <div className="p-4 bg-[#1a1d23] rounded-lg border border-casino-gold/20">
                     <h4 className="font-semibold text-casino-gold mb-2">Basic Information</h4>
                     <ul className="text-sm text-[#A6B0BF] space-y-1">
-                      <li>• Token Name (e.g., "My Awesome Token")</li>
-                      <li>• Token Symbol (e.g., "MAT")</li>
+                      <li>• Token Name (e.g., &quot;My Awesome Token&quot;)</li>
+                      <li>• Token Symbol (e.g., &quot;MAT&quot;)</li>
                       <li>• Total Supply (default: 1 billion)</li>
                       <li>• Description (what your token is about)</li>
                     </ul>
@@ -108,7 +108,7 @@ export default function LaunchTokenPage() {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">Review & Pay Launch Fee</h3>
                 <p className="text-[#A6B0BF] mb-4">
-                  Review all your token details and pay the launch fee. This fee goes directly to The House and helps fund the ecosystem's rewards and games.
+                  Review all your token details and pay the launch fee. This fee goes directly to The House and helps fund the ecosystem&apos;s rewards and games.
                 </p>
                 <div className="bg-[#1a1d23] rounded-lg p-4 border border-red-400/20">
                   <div className="flex justify-between items-center">
@@ -147,7 +147,7 @@ export default function LaunchTokenPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">After Launch: Building Success</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Launching is just the beginning. Here's how to build momentum and work toward milestone rewards:
+            Launching is just the beginning. Here&apos;s how to build momentum and work toward milestone rewards:
           </p>
           
           <div className="grid gap-6">
@@ -156,7 +156,7 @@ export default function LaunchTokenPage() {
               <ul className="text-[#E9EEF5] space-y-2">
                 <li>• Share your launch across social media</li>
                 <li>• Engage with your Telegram/Discord community</li>
-                <li>• Post regular updates about your project's progress</li>
+                <li>• Post regular updates about your project&apos;s progress</li>
                 <li>• Collaborate with other JUSTWYNN projects</li>
               </ul>
             </div>
@@ -190,7 +190,7 @@ export default function LaunchTokenPage() {
             <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/20">
               <h4 className="font-semibold text-green-400 mb-2">✅ Do</h4>
               <ul className="text-[#E9EEF5] text-sm space-y-1">
-                <li>• Be transparent about your project's goals and roadmap</li>
+                <li>• Be transparent about your project&apos;s goals and roadmap</li>
                 <li>• Engage actively with your community</li>
                 <li>• Focus on building real value and utility</li>
                 <li>• Celebrate milestones and share progress updates</li>
@@ -198,7 +198,7 @@ export default function LaunchTokenPage() {
             </div>
             
             <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20">
-              <h4 className="font-semibold text-red-400 mb-2">❌ Don't</h4>
+              <h4 className="font-semibold text-red-400 mb-2">❌ Don&apos;t</h4>
               <ul className="text-[#E9EEF5] text-sm space-y-1">
                 <li>• Make unrealistic promises about returns or guarantees</li>
                 <li>• Engage in market manipulation or wash trading</li>

@@ -44,7 +44,7 @@ export default function HowItWorksPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">The House: Community Bankroll</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            The House is the beating heart of JUSTWYNN—a constantly growing pool that powers all rewards, games, and competitions. It's funded by three main sources:
+            The House is the beating heart of JUSTWYNN—a constantly growing pool that powers all rewards, games, and competitions. It&apos;s funded by three main sources:
           </p>
           
           <div className="grid gap-6 mb-6">
@@ -58,7 +58,7 @@ export default function HowItWorksPage() {
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
               <h3 className="text-xl font-semibold text-casino-gold mb-3">📊 Trading Fees</h3>
               <p className="text-[#E9EEF5]">
-                A 1% trading fee is split between platform operations and The House, ensuring every trade contributes to the ecosystem's growth.
+                A 1% trading fee is split between platform operations and The House, ensuring every trade contributes to the ecosystem&apos;s growth.
               </p>
             </div>
             
@@ -121,7 +121,7 @@ export default function HowItWorksPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Sustainable Economics</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            JUSTWYNN is designed for long-term sustainability. We only fund games and rewards from The House's inflows and yield—never touching the principal. This means The House compounds over time, creating a virtuous cycle of growth.
+            JUSTWYNN is designed for long-term sustainability. We only fund games and rewards from The House&apos;s inflows and yield—never touching the principal. This means The House compounds over time, creating a virtuous cycle of growth.
           </p>
           
           <div className="bg-gradient-to-r from-casino-green/10 to-casino-gold/10 rounded-xl p-6 border border-casino-green/20">

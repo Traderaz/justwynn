@@ -15,7 +15,7 @@ export default function GraduationSystemPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">What is Graduation?</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Graduation is JUSTWYNN's recognition system for tokens that demonstrate sustained success and community strength. Graduated tokens earn Hall of Fame status, ongoing visibility, and special perks for their holder communities.
+            Graduation is JUSTWYNN&apos;s recognition system for tokens that demonstrate sustained success and community strength. Graduated tokens earn Hall of Fame status, ongoing visibility, and special perks for their holder communities.
           </p>
           
           <div className="bg-gradient-to-r from-casino-gold/10 to-red-400/10 rounded-xl p-6 border border-casino-gold/20">
@@ -75,7 +75,7 @@ export default function GraduationSystemPage() {
             <div className="p-4 rounded-lg bg-casino-gold/10 border border-casino-gold/20">
               <h4 className="font-semibold text-casino-gold mb-2">👑 Featured Placement</h4>
               <p className="text-[#E9EEF5] text-sm">
-                Prominent display on JUSTWYNN's main interface, docs, and marketing materials. Graduated tokens get premium visibility.
+                Prominent display on JUSTWYNN&apos;s main interface, docs, and marketing materials. Graduated tokens get premium visibility.
               </p>
             </div>
             

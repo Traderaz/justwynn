@@ -114,7 +114,7 @@ export default function DocsSidebar({ isOpen = true, onClose, className = '' }: 
 
           {/* Navigation */}
           <nav className="flex-1 px-6 pb-6 overflow-y-auto">
-            {sidebarSections.map((section, sectionIndex) => {
+            {sidebarSections.map((section) => {
               // Filter items based on search query
               const filteredItems = section.items.filter(item =>
                 item.title.toLowerCase().includes(searchQuery.toLowerCase())
@@ -135,7 +135,7 @@ export default function DocsSidebar({ isOpen = true, onClose, className = '' }: 
                     <div className="flex-1 h-px bg-gradient-to-r from-casino-gold/20 to-transparent"></div>
                   </div>
                   <ul className="space-y-2 ml-4">
-                    {(searchQuery ? filteredItems : section.items).map((item, itemIndex) => {
+                    {(searchQuery ? filteredItems : section.items).map((item) => {
                       const isActive = pathname === item.href;
                       return (
                         <li key={item.href}>
@@ -190,7 +190,7 @@ export default function DocsSidebar({ isOpen = true, onClose, className = '' }: 
             ) && (
               <div className="text-center py-8">
                 <div className="text-[#A6B0BF] text-sm">
-                  No documentation found for "{searchQuery}"
+                  No documentation found for &quot;{searchQuery}&quot;
                 </div>
                 <button
                   onClick={() => setSearchQuery('')}

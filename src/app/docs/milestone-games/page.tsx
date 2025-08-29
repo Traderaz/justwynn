@@ -15,7 +15,7 @@ export default function MilestoneGamesPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Game Unlocks</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            When a token reaches significant milestones—like $1M market cap or 1,000 holders—The House automatically unlocks games and competitions for that token's community. These games are funded by The House and designed with fair odds and verifiable randomness.
+            When a token reaches significant milestones—like $1M market cap or 1,000 holders—The House automatically unlocks games and competitions for that token&apos;s community. These games are funded by The House and designed with fair odds and verifiable randomness.
           </p>
           
           <div className="grid gap-6">
@@ -75,7 +75,7 @@ export default function MilestoneGamesPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Prize Types</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Milestone games offer various prize types, all funded by The House's sustainable reward system:
+            Milestone games offer various prize types, all funded by The House&apos;s sustainable reward system:
           </p>
           
           <div className="space-y-4">
@@ -89,7 +89,7 @@ export default function MilestoneGamesPage() {
             <div className="p-4 rounded-lg bg-casino-gold/10 border border-casino-gold/20">
               <h4 className="font-semibold text-casino-gold mb-2">💎 SOL Prizes</h4>
               <p className="text-[#E9EEF5] text-sm">
-                Direct SOL rewards funded by The House. Prize pools scale with The House's growth and the token's milestone level.
+                Direct SOL rewards funded by The House. Prize pools scale with The House&apos;s growth and the token&apos;s milestone level.
               </p>
             </div>
             

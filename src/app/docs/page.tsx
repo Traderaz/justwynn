@@ -116,15 +116,9 @@ const docSections: DocSection[] = [
 ];
 
 export default function DocsPage() {
-  const [searchQuery, setSearchQuery] = useState('');
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
-  const filteredSections = docSections.filter(section =>
-    section.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-    section.description.toLowerCase().includes(searchQuery.toLowerCase())
-  );
-
-  const groupedSections = filteredSections.reduce((acc, section) => {
+  const groupedSections = docSections.reduce((acc, section) => {
     if (!acc[section.category]) {
       acc[section.category] = [];
     }
@@ -228,7 +222,7 @@ export default function DocsPage() {
                   {category}
                 </h2>
                 <div className="grid md:grid-cols-2 gap-4">
-                  {sections.map((section, index) => (
+                  {sections.map((section) => (
                     <motion.div
                       key={section.id}
                       whileHover={{ scale: 1.02, y: -2 }}
