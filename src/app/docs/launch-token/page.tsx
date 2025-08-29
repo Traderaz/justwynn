@@ -23,7 +23,7 @@ export default function LaunchTokenPage() {
             <ul className="space-y-2 text-[#E9EEF5]">
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 bg-casino-green rounded-full"></span>
-                Solana wallet with SOL for launch fee and gas
+                Solana wallet with SOL for gas fees only
               </li>
               <li className="flex items-center gap-3">
                 <span className="w-2 h-2 bg-casino-green rounded-full"></span>
@@ -54,11 +54,11 @@ export default function LaunchTokenPage() {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">Connect Your Wallet</h3>
                 <p className="text-[#A6B0BF] mb-4">
-                  Connect your Solana wallet (Phantom, Solflare, etc.) to the JUSTWYNN platform. Make sure you have enough SOL for the launch fee and transaction costs.
+                  Connect your Solana wallet (Phantom, Solflare, etc.) to the JUSTWYNN platform. Make sure you have enough SOL for transaction costs only.
                 </p>
                 <div className="bg-yellow-500/10 border border-yellow-500/20 rounded-lg p-4">
                   <p className="text-yellow-400 text-sm">
-                    💡 <strong>Tip:</strong> Keep at least 0.1 SOL extra for transaction fees during the launch process.
+                    💡 <strong>Tip:</strong> Keep at least 0.01 SOL for transaction fees during the launch process.
                   </p>
                 </div>
               </div>
@@ -106,14 +106,14 @@ export default function LaunchTokenPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Review & Pay Launch Fee</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Review & Launch for FREE</h3>
                 <p className="text-[#A6B0BF] mb-4">
-                  Review all your token details and pay the launch fee. This fee goes directly to The House and helps fund the ecosystem&apos;s rewards and games.
+                  Review all your token details and launch your token completely FREE. JUSTWYNN believes in zero barriers to entry for creators.
                 </p>
-                <div className="bg-[#1a1d23] rounded-lg p-4 border border-red-400/20">
+                <div className="bg-[#1a1d23] rounded-lg p-4 border border-casino-green/20">
                   <div className="flex justify-between items-center">
                     <span className="text-[#E9EEF5]">Launch Fee:</span>
-                    <span className="text-red-400 font-bold">0.1 SOL</span>
+                    <span className="text-casino-green font-bold">FREE</span>
                   </div>
                   <div className="flex justify-between items-center mt-2">
                     <span className="text-[#E9EEF5]">Estimated Gas:</span>

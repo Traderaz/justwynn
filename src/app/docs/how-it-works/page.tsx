@@ -23,15 +23,15 @@ export default function HowItWorksPage() {
             <div className="space-y-4">
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 rounded-full bg-casino-green/20 flex items-center justify-center text-casino-green font-bold">1</div>
-                <span className="text-[#E9EEF5]">Launch → Pay entry fee to The House</span>
+                <span className="text-[#E9EEF5]">Launch → FREE token creation</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 rounded-full bg-casino-gold/20 flex items-center justify-center text-casino-gold font-bold">2</div>
-                <span className="text-[#E9EEF5]">Trade → 1% trading fee split feeds The House</span>
+                <span className="text-[#E9EEF5]">Trade → 0.9% trading fee split feeds The House</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 rounded-full bg-red-400/20 flex items-center justify-center text-red-400 font-bold">3</div>
-                <span className="text-[#E9EEF5]">Graduate → Migration fee grows The House</span>
+                <span className="text-[#E9EEF5]">Progress → Tier advancement fee grows The House</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 rounded-full bg-purple-400/20 flex items-center justify-center text-purple-400 font-bold">4</div>
@@ -58,14 +58,14 @@ export default function HowItWorksPage() {
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
               <h3 className="text-xl font-semibold text-casino-gold mb-3">📊 Trading Fees</h3>
               <p className="text-[#E9EEF5]">
-                A 1% trading fee is split between platform operations and The House, ensuring every trade contributes to the ecosystem&apos;s growth.
+                A competitive 0.9% trading fee is split three ways: liquidity protection (0.3%), platform operations (0.3%), and The House (0.3%).
               </p>
             </div>
             
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-red-400/20">
-              <h3 className="text-xl font-semibold text-red-400 mb-3">🎓 Graduation Fees</h3>
+              <h3 className="text-xl font-semibold text-red-400 mb-3">🎰 Tier Progression Fees</h3>
               <p className="text-[#E9EEF5]">
-                When successful tokens migrate to main liquidity, they pay a flat graduation fee—a predictable contribution to The House.
+                When tokens advance through tiers (Rising Pot → Royal Flush, Games Unlock), they pay minimal progression fees to The House.
               </p>
             </div>
           </div>
@@ -88,7 +88,7 @@ export default function HowItWorksPage() {
             </div>
             <div className="p-4 rounded-lg bg-[#1a1d23] border-l-4 border-red-400">
               <h4 className="font-semibold text-red-400 mb-2">Sustained Performance</h4>
-              <p className="text-[#A6B0BF] text-sm">Maintaining milestones over time unlocks Hall of Fame graduation</p>
+              <p className="text-[#A6B0BF] text-sm">Maintaining milestones over time unlocks Royal Flush tier progression</p>
             </div>
           </div>
         </section>

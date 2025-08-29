@@ -15,10 +15,9 @@ const Navbar = ({ onJoinWaitlist }: NavbarProps) => {
     { name: "The House", href: "#the-house" },
     { name: "Milestone Games", href: "#milestone-games" },
     { name: "The House Cup", href: "#the-house-cup" },
-    { name: "Hall of Fame", href: "#hall-of-fame" },
+    { name: "Royal Flush", href: "#hall-of-fame" },
     { name: "FAQ", href: "#faq" },
     { name: "Docs", href: "/docs" },
-    { name: "Get Started", href: "#get-started" },
   ];
 
   return (

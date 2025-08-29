@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Inter, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 import NavbarWrapper from "@/components/NavbarWrapper";
-import Footer from "@/components/Footer";
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -52,7 +51,6 @@ export default function RootLayout({
         <main className="flex-1">
           {children}
         </main>
-        <Footer />
       </body>
     </html>
   );

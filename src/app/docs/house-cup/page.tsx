@@ -131,10 +131,10 @@ export default function HouseCupPage() {
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
               <h3 className="text-xl font-semibold text-casino-gold mb-3">🏆 Season Champions</h3>
               <p className="text-[#E9EEF5] mb-4">
-                Monthly winners receive special recognition, larger reward pools, and Hall of Fame consideration.
+                Monthly winners receive special recognition, larger reward pools, and Royal Flush tier consideration.
               </p>
               <div className="text-sm text-[#A6B0BF]">
-                Season champions get fast-tracked evaluation for graduation and special ecosystem benefits.
+                Season champions get fast-tracked evaluation for tier progression and special ecosystem benefits.
               </div>
             </div>
           </div>

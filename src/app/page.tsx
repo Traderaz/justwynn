@@ -37,21 +37,21 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-[#0B0D10]">
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-16">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-12 sm:pt-16">
         {/* Casino Background */}
         <CasinoBackground variant="hero" opacity={0.20} />
 
         {/* Main content */}
-        <div className="relative z-10 text-center max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="relative z-10 text-center max-w-5xl mx-auto px-3 sm:px-6 lg:px-8 py-12 sm:py-20">
           {/* JUSTWYNN Logo/Sign */}
           <motion.div
-            className="mb-12"
+            className="mb-8 sm:mb-12"
             initial={{ opacity: 0, scale: 0.95, y: -10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1] }}
           >
             <h1 
-              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-8 text-casino-green"
+              className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold mb-6 sm:mb-8 text-casino-green"
               style={{ 
                 fontFamily: 'var(--font-space-grotesk)',
                 textShadow: '0 0 30px rgba(0, 179, 102, 0.4), 0 0 60px rgba(0, 179, 102, 0.2)'
@@ -77,7 +77,7 @@ export default function Home() {
 
           {/* Subtitle */}
           <motion.p 
-            className="text-lg sm:text-xl md:text-2xl lg:text-3xl text-[#A6B0BF] mb-16 sm:mb-20 max-w-4xl mx-auto leading-relaxed px-4"
+            className="text-base sm:text-xl md:text-2xl lg:text-3xl text-[#A6B0BF] mb-12 sm:mb-20 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"
             style={{ fontFamily: 'var(--font-inter)' }}
             initial={{ opacity: 0, y: 8, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -189,15 +189,15 @@ export default function Home() {
                 gradient: "linear-gradient(135deg, rgba(0, 226, 138, 0.15) 0%, rgba(0, 226, 138, 0.05) 100%)"
               },
               {
-                title: "Graduation System", 
-                description: "Tokens that hit key milestones \"graduate\" into our Hall of Fame and unlock rewards.",
-                icon: "🎓",
+                title: "Three-Tier System", 
+                description: "Tokens progress through Opening Hand (newly created), Rising Pot (below $100K), and Royal Flush (above $100K). Games unlock at $1M+.",
+                icon: "🎰",
                 color: "#F59E0B",
                 gradient: "linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%)"
               },
               {
                 title: "The House",
-                description: "Every launch, trade, and graduation fuels The House—a pool that grows daily and powers rewards, games, and competitions.",
+                description: "Every launch, trade, and tier progression fuels The House—a pool that grows daily and powers rewards, games, and competitions.",
                 icon: "🏛️",
                 color: "#DC2626",
                 gradient: "linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(220, 38, 38, 0.05) 100%)"
@@ -211,7 +211,7 @@ export default function Home() {
               },
               {
                 title: "Streak Rewards", 
-                description: "Back multiple graduates in a row to unlock reduced fees, extra jackpot entries, and exclusive NFT badges.",
+                description: "Back multiple Royal Flush tokens in a row to unlock reduced fees, extra jackpot entries, and exclusive NFT badges.",
                 icon: "🔥",
                 color: "#EF4444",
                 gradient: "linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0.05) 100%)"
@@ -365,7 +365,7 @@ export default function Home() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              The House is our constantly growing, community-powered bankroll. It&apos;s funded by launch fees, trading volume (1% trading fee split internally), and a flat migration/graduation fee when projects move to main liquidity. We only fund games and rewards from inflows/yield—not principal—so The House compounds over time.
+              The House is our constantly growing, community-powered bankroll. It&apos;s funded by trading volume (0.9% trading fee with 0.3% to The House), and tier progression fees as tokens advance through Opening Hand, Rising Pot, and Royal Flush. We only fund games and rewards from inflows/yield—not principal—so The House compounds over time.
             </motion.p>
           </motion.div>
 
@@ -373,31 +373,31 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-12 max-w-6xl mx-auto">
             {[
               {
-                title: "Low Launch Fee",
-                subtitle: "Accessible entry for creators",
+                title: "Free Launch",
+                subtitle: "Zero barrier to entry",
                 icon: "🚀",
                 color: "#00E28A",
                 accentColor: "#00B366",
-                stat: "~$5",
-                description: "Minimal barrier to entry"
+                stat: "FREE",
+                description: "No upfront costs"
               },
               {
-                title: "1% Trading Fee", 
-                subtitle: "Split to ops + The House",
+                title: "0.9% Trading Fee", 
+                subtitle: "Split 3-ways for sustainability",
                 icon: "💱",
                 color: "#F59E0B",
                 accentColor: "#D97706",
-                stat: "0.5% + 0.5%",
-                description: "Sustainable growth model"
+                stat: "0.3% × 3",
+                description: "Liquidity + Ops + House"
               },
               {
-                title: "Flat Migration Fee",
-                subtitle: "Predictable growth on graduation",
-                icon: "🎓",
+                title: "Tier Progression Fee",
+                subtitle: "Predictable growth through tiers",
+                icon: "🎰",
                 color: "#DC2626",
                 accentColor: "#B91C1C",
                 stat: "Fixed Rate",
-                description: "Transparent progression"
+                description: "Transparent advancement"
               }
             ].map((stat, index) => (
               <motion.div
@@ -564,7 +564,7 @@ export default function Home() {
               Milestone Games — Play to Win
             </h2>
             <p className="text-lg text-[#A6B0BF] max-w-4xl mx-auto">
-              When a token hits major milestones—like $1M market cap or 1,000 holders—The House unlocks games for that community&apos;s holders.
+              When a token reaches $1M+ market cap, it unlocks exclusive games for holders. Only Royal Flush tokens that sustain this milestone activate The House games.
             </p>
           </motion.div>
 
@@ -758,7 +758,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <h2 className="text-display-lg text-casino-gold mb-12" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-              Hall of Fame
+              Token Tier System
             </h2>
             
             {/* Neon Bullet Points */}
@@ -766,24 +766,24 @@ export default function Home() {
               <div className="space-y-6">
                 {[
                   { 
-                    icon: "🎖️", 
-                    title: "Graduation Requirements", 
-                    description: "Tokens must sustain strong performance metrics over time to earn Hall of Fame status"
+                    icon: "🃏", 
+                    title: "Opening Hand", 
+                    description: "Newly created tokens start here. The beginning of every token's journey on JUSTWYNN."
+                  },
+                  { 
+                    icon: "💰", 
+                    title: "Rising Pot", 
+                    description: "Tokens with market caps below $100K. Building momentum and community support."
                   },
                   { 
                     icon: "👑", 
-                    title: "Ongoing Visibility", 
-                    description: "Featured placement and recognition across the JUSTWYNN platform for graduated tokens"
+                    title: "Royal Flush", 
+                    description: "Elite tokens above $100K market cap. Featured placement and recognition across JUSTWYNN."
                   },
                   { 
-                    icon: "🎁", 
-                    title: "Holder Perks", 
-                    description: "Exclusive benefits and rewards for communities of Hall of Fame tokens"
-                  },
-                  { 
-                    icon: "🏗️", 
-                    title: "Beyond Launch Hype", 
-                    description: "Recognition for projects that build real value and sustainable communities"
+                    icon: "🎰", 
+                    title: "Games Unlock at $1M+", 
+                    description: "Only Royal Flush tokens that reach and sustain $1M+ market cap unlock milestone games and rewards."
                   }
                 ].map((item, index) => (
                   <motion.div
@@ -881,7 +881,7 @@ export default function Home() {
                   { 
                     icon: "🎯", 
                     title: "Loyalty Ladder", 
-                    description: "Back multiple graduates in a row to climb through increasing reward tiers"
+                    description: "Back multiple Royal Flush tokens in a row to climb through increasing reward tiers"
                   },
                   { 
                     icon: "💸", 
@@ -986,19 +986,19 @@ export default function Home() {
             {[
               {
                 question: "How does The House grow?",
-                answer: "From launch fees, trading fee splits, and a flat migration/graduation fee. We fund games from inflows/yield—not principal—so The House compounds."
+                answer: "From trading fee splits (0.3% of 0.9% total) and tier progression fees. We fund games from inflows/yield—not principal—so The House compounds over time."
               },
               {
                 question: "What can I win in Milestone Games?",
-                answer: "Token supply from the milestone project, SOL prizes, and Justwynn tokens—distributed with verifiable randomness."
+                answer: "Token supply from Royal Flush projects that reach $1M+, SOL prizes from The House, and JUSTWYNN tokens—all distributed with verifiable randomness."
               },
               {
-                question: "Is there any allocation gating?",
-                answer: "No. Anyone can buy however much supply they want; our rewards focus on milestone success and loyal holders."
+                question: "How do tokens progress through tiers?",
+                answer: "Tokens start as Opening Hand (newly created), move to Rising Pot (below $100K), then Royal Flush (above $100K). Games only unlock at $1M+ market cap."
               },
               {
                 question: "Do you guarantee safety or refunds?",
-                answer: "We don't guarantee outcomes. Our systems reward traction and loyalty, and The House is designed to grow regardless of market conditions."
+                answer: "We don't guarantee outcomes. Our tier system rewards sustained traction and loyal holders, while The House grows regardless of market conditions."
               }
             ].map((faq, index) => (
               <FAQItem key={index} question={faq.question} answer={faq.answer} />
@@ -1007,45 +1007,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Final CTA Section */}
-      <section id="get-started" className="relative py-24 mt-20">
-        <CasinoBackground variant="section" opacity={0.15} />
-        <div className="relative z-10 container mx-auto px-4">
-          <motion.div
-            className="text-center max-w-4xl mx-auto"
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            viewport={{ once: true }}
-          >
-            <h2 className="text-display-lg text-casino-gold mb-6" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
-              Ready to Launch?
-            </h2>
-            <p className="text-lg text-[#A6B0BF] mb-8">
-              Create your token in minutes. Let the community decide who graduates. Let The House turn milestones into wins.
-            </p>
-            
-            <div className="flex flex-row gap-4 justify-center items-center">
-              <Button
-                onClick={() => setIsWaitlistOpen(true)}
-                className="casino-green hover:opacity-90 text-white border border-casino-green h-12 px-8 rounded-2xl font-semibold text-base min-w-[160px] transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
-                style={{ fontFamily: 'var(--font-inter)', boxShadow: '0 0 20px rgba(0, 179, 102, 0.3)' }}
-              >
-                Join The List
-              </Button>
-              <Link href="/docs">
-                <Button
-                  variant="outline"
-                  className="bg-transparent hover:bg-casino-gold/10 text-[#E9EEF5] border border-casino-gold/30 hover:border-casino-gold h-12 px-8 rounded-2xl font-semibold text-base min-w-[160px] transition-all duration-200 hover:scale-105"
-                  style={{ fontFamily: 'var(--font-inter)' }}
-                >
-                  Read the Docs
-                </Button>
-              </Link>
-            </div>
-          </motion.div>
-        </div>
-      </section>
+
 
       {/* Waitlist Form Modal */}
       <SimpleWaitlistForm 

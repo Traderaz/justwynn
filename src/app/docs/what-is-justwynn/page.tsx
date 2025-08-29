@@ -96,14 +96,14 @@ export default function WhatIsJustwynnPage() {
                   <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
                     <h3 className="text-xl font-semibold text-casino-gold mb-3">🏛️ Community-Powered Growth</h3>
                     <p className="text-[#E9EEF5]">
-                      Every launch, trade, and graduation feeds The House—a community bankroll that powers rewards, games, and competitions for all participants.
+                      Every trade and tier progression feeds The House—a community bankroll that powers rewards, games, and competitions for all participants.
                     </p>
                   </div>
                   
                   <div className="p-6 rounded-xl bg-[#1a1d23] border border-red-400/20">
                     <h3 className="text-xl font-semibold text-red-400 mb-3">🎯 Merit-Based Rewards</h3>
                     <p className="text-[#E9EEF5]">
-                      Only tokens that hit real milestones—market cap, holder count, sustained performance—unlock games, rewards, and Hall of Fame status.
+                      Only tokens that hit real milestones—market cap, holder count, sustained performance—unlock games, rewards, and Royal Flush tier status.
                     </p>
                   </div>
                 </div>
@@ -118,7 +118,7 @@ export default function WhatIsJustwynnPage() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white mb-2">Launch</h4>
-                      <p className="text-[#A6B0BF]">Create your token with our simple interface. Pay a small launch fee that goes directly to The House.</p>
+                      <p className="text-[#A6B0BF]">Create your token with our simple interface completely FREE. Zero barriers to entry for creators.</p>
                     </div>
                   </div>
                   
@@ -138,7 +138,7 @@ export default function WhatIsJustwynnPage() {
                     </div>
                     <div>
                       <h4 className="text-lg font-semibold text-white mb-2">Hit Milestones</h4>
-                      <p className="text-[#A6B0BF]">When your token reaches major milestones, unlock games, competitions, and potential graduation to Hall of Fame status.</p>
+                      <p className="text-[#A6B0BF]">When your token reaches major milestones, unlock games, competitions, and potential progression to Royal Flush tier status.</p>
                     </div>
                   </div>
                 </div>

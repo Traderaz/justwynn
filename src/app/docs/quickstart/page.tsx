@@ -8,7 +8,7 @@ export default function QuickstartPage() {
     <DocPageLayout
       title="Quickstart"
       description="Begin interacting with JUSTWYNN's platform and start building in the ecosystem."
-      prevPage={{ title: "Graduation System", href: "/docs/graduation-system" }}
+      prevPage={{ title: "Token Tier System", href: "/docs/graduation-system" }}
       nextPage={{ title: "API Reference", href: "/docs/api-reference" }}
     >
       <div className="space-y-8">

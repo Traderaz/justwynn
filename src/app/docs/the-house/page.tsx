@@ -42,12 +42,12 @@ export default function TheHousePage() {
                 </div>
               </div>
               <p className="text-[#E9EEF5] mb-4">
-                Every token launch requires a small entry fee (currently 0.1 SOL) that goes directly to The House. This keeps launches accessible while ensuring sustainable ecosystem funding.
+                Token launches are completely FREE on JUSTWYNN. We believe in zero barriers to entry, making token creation accessible to everyone regardless of their financial situation.
               </p>
               <div className="bg-casino-green/5 rounded-lg p-4 border border-casino-green/10">
                 <div className="flex justify-between items-center">
-                  <span className="text-[#A6B0BF]">Current Launch Fee:</span>
-                  <span className="text-casino-green font-semibold">0.1 SOL</span>
+                  <span className="text-[#A6B0BF]">Launch Fee:</span>
+                  <span className="text-casino-green font-semibold">FREE</span>
                 </div>
               </div>
             </div>
@@ -61,17 +61,25 @@ export default function TheHousePage() {
                 </div>
               </div>
               <p className="text-[#E9EEF5] mb-4">
-                A 1% trading fee is collected on all token trades. This fee is split between platform operations and The House, ensuring every trade contributes to ecosystem growth.
+                A competitive 0.9% trading fee is collected on all token trades. This fee is split three ways: liquidity protection, platform operations, and The House growth.
               </p>
               <div className="bg-casino-gold/5 rounded-lg p-4 border border-casino-gold/10">
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">Total Fee:</span>
-                    <span className="text-casino-gold">1%</span>
+                    <span className="text-casino-gold">0.9%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[#A6B0BF]">To Liquidity:</span>
+                    <span className="text-casino-gold">0.3%</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span className="text-[#A6B0BF]">To Operations:</span>
+                    <span className="text-casino-gold">0.3%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">To The House:</span>
-                    <span className="text-casino-gold">0.5%</span>
+                    <span className="text-casino-gold">0.3%</span>
                   </div>
                 </div>
               </div>

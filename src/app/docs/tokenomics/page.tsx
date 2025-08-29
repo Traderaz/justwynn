@@ -100,7 +100,7 @@ export default function TokenomicsPage() {
             <div className="p-4 rounded-lg bg-red-400/10 border border-red-400/20">
               <h4 className="font-semibold text-red-400 mb-2">💸 Fee Discounts</h4>
               <p className="text-[#E9EEF5] text-sm">
-                Reduced launch fees and trading fees based on JUSTWYNN token holdings and staking.
+                Reduced tier progression fees and trading fees based on JUSTWYNN token holdings and staking.
               </p>
             </div>
             

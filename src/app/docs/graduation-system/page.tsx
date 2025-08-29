@@ -6,97 +6,100 @@ import DocPageLayout from '@/components/docs/DocPageLayout';
 export default function GraduationSystemPage() {
   return (
     <DocPageLayout
-      title="Graduation System"
-      description="How tokens graduate to Hall of Fame status and unlock ongoing visibility and perks for their communities."
+      title="Token Tier System"
+      description="How tokens progress through Opening Hand, Rising Pot, and Royal Flush tiers, with games unlocking at $1M+ market cap."
       prevPage={{ title: "Milestone Games", href: "/docs/milestone-games" }}
       nextPage={{ title: "Quickstart", href: "/docs/quickstart" }}
     >
       <div className="space-y-8">
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">What is Graduation?</h2>
+          <h2 className="text-2xl font-bold text-casino-gold mb-4">The Three-Tier System</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Graduation is JUSTWYNN&apos;s recognition system for tokens that demonstrate sustained success and community strength. Graduated tokens earn Hall of Fame status, ongoing visibility, and special perks for their holder communities.
+            JUSTWYNN uses a poker-themed three-tier system to categorize tokens based on their market performance. Each tier offers different visibility and benefits, with milestone games unlocking only for Royal Flush tokens that reach $1M+ market cap.
           </p>
           
-          <div className="bg-gradient-to-r from-casino-gold/10 to-red-400/10 rounded-xl p-6 border border-casino-gold/20">
-            <h3 className="text-xl font-semibold text-white mb-4">🎓 Beyond Launch Hype</h3>
+          <div className="bg-gradient-to-r from-casino-gold/10 to-casino-green/10 rounded-xl p-6 border border-casino-gold/20">
+            <h3 className="text-xl font-semibold text-white mb-4">🎰 Progressive Recognition</h3>
             <p className="text-[#E9EEF5] leading-relaxed">
-              Unlike other platforms that focus only on initial launches, JUSTWYNN rewards projects that build real value and maintain community engagement over time. Graduation represents sustained success, not just early momentum.
+              Unlike platforms that only focus on launches, JUSTWYNN recognizes sustained growth through clear tier progression. This system rewards genuine traction while maintaining excitement for milestone achievements.
             </p>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">Graduation Requirements</h2>
+          <h2 className="text-2xl font-bold text-casino-gold mb-4">The Three Tiers</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Tokens must meet multiple criteria over sustained periods to qualify for graduation. This ensures only genuinely successful projects achieve Hall of Fame status.
+            Every token on JUSTWYNN progresses through these tiers based on market cap milestones. Each tier offers different visibility and benefits.
           </p>
           
           <div className="grid gap-6">
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-green/20">
-              <h3 className="text-xl font-semibold text-casino-green mb-3">📈 Performance Metrics</h3>
+              <h3 className="text-xl font-semibold text-casino-green mb-3">🃏 Opening Hand</h3>
+              <p className="text-[#E9EEF5] mb-4">Newly created tokens start here</p>
               <ul className="text-[#E9EEF5] space-y-2">
-                <li>• Minimum $5M market cap maintained for 30+ days</li>
-                <li>• 2,000+ unique holders with healthy distribution</li>
-                <li>• Consistent trading volume and liquidity</li>
-                <li>• No major dumps or manipulation patterns</li>
+                <li>• All newly launched tokens begin in Opening Hand</li>
+                <li>• Basic visibility on the platform</li>
+                <li>• Standard trading and community features</li>
+                <li>• No special perks or games yet</li>
               </ul>
             </div>
             
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
-              <h3 className="text-xl font-semibold text-casino-gold mb-3">👥 Community Strength</h3>
+              <h3 className="text-xl font-semibold text-casino-gold mb-3">💰 Rising Pot</h3>
+              <p className="text-[#E9EEF5] mb-4">Tokens with market caps below $100K</p>
               <ul className="text-[#E9EEF5] space-y-2">
-                <li>• Active social media presence and engagement</li>
-                <li>• Regular development updates and roadmap progress</li>
-                <li>• Strong holder retention rates</li>
-                <li>• Positive community sentiment and growth</li>
+                <li>• Building momentum and community support</li>
+                <li>• Enhanced visibility on platform</li>
+                <li>• Eligible for community competitions</li>
+                <li>• Progress tracking toward Royal Flush</li>
               </ul>
             </div>
             
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-red-400/20">
-              <h3 className="text-xl font-semibold text-red-400 mb-3">🏗️ Project Development</h3>
+              <h3 className="text-xl font-semibold text-red-400 mb-3">👑 Royal Flush</h3>
+              <p className="text-[#E9EEF5] mb-4">Elite tokens above $100K market cap</p>
               <ul className="text-[#E9EEF5] space-y-2">
-                <li>• Clear utility and value proposition</li>
-                <li>• Active development and feature releases</li>
-                <li>• Transparent team and communication</li>
-                <li>• Real-world adoption or partnerships</li>
+                <li>• Premium placement and recognition</li>
+                <li>• Featured across JUSTWYNN platform</li>
+                <li>• Eligible for special partnerships</li>
+                <li>• <strong>Games unlock at $1M+ sustained market cap</strong></li>
               </ul>
             </div>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">Hall of Fame Benefits</h2>
+          <h2 className="text-2xl font-bold text-casino-gold mb-4">Milestone Games Unlock</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Graduated tokens and their communities receive ongoing benefits and recognition within the JUSTWYNN ecosystem:
+            While tier progression provides visibility and recognition, milestone games only unlock for Royal Flush tokens that reach and sustain $1M+ market cap:
           </p>
           
           <div className="space-y-4">
             <div className="p-4 rounded-lg bg-casino-gold/10 border border-casino-gold/20">
-              <h4 className="font-semibold text-casino-gold mb-2">👑 Featured Placement</h4>
+              <h4 className="font-semibold text-casino-gold mb-2">🎰 Game Activation</h4>
               <p className="text-[#E9EEF5] text-sm">
-                Prominent display on JUSTWYNN&apos;s main interface, docs, and marketing materials. Graduated tokens get premium visibility.
+                Only Royal Flush tokens that reach $1M+ market cap unlock slots, lotteries, and roulette games for their holder communities.
               </p>
             </div>
             
             <div className="p-4 rounded-lg bg-casino-green/10 border border-casino-green/20">
-              <h4 className="font-semibold text-casino-green mb-2">🎁 Exclusive Rewards</h4>
+              <h4 className="font-semibold text-casino-green mb-2">🏆 Sustained Success</h4>
               <p className="text-[#E9EEF5] text-sm">
-                Holders of graduated tokens receive special perks, bonus game entries, and exclusive access to new features and competitions.
+                Games require sustained market cap performance, not just brief spikes. This ensures only genuinely successful tokens access premium features.
               </p>
             </div>
             
             <div className="p-4 rounded-lg bg-red-400/10 border border-red-400/20">
-              <h4 className="font-semibold text-red-400 mb-2">🤝 Partnership Opportunities</h4>
+              <h4 className="font-semibold text-red-400 mb-2">💎 Exclusive Rewards</h4>
               <p className="text-[#E9EEF5] text-sm">
-                Graduated projects get priority for partnerships, cross-promotion, and collaboration opportunities within the ecosystem.
+                Game winners receive token supply from the milestone project, SOL prizes from The House, and JUSTWYNN ecosystem rewards.
               </p>
             </div>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">Graduation Process</h2>
+          <h2 className="text-2xl font-bold text-casino-gold mb-4">Tier Progression Process</h2>
           
           <div className="space-y-6">
             <div className="flex gap-6">
@@ -106,9 +109,9 @@ export default function GraduationSystemPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Automatic Monitoring</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Automatic Tracking</h3>
                 <p className="text-[#A6B0BF]">
-                  JUSTWYNN continuously monitors all tokens for graduation criteria. No application process required—qualified tokens are automatically identified.
+                  JUSTWYNN continuously monitors all token market caps. Tier progression happens automatically when thresholds are reached—no application needed.
                 </p>
               </div>
             </div>
@@ -120,9 +123,9 @@ export default function GraduationSystemPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Community Review</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Tier Advancement</h3>
                 <p className="text-[#A6B0BF]">
-                  Qualified tokens undergo a brief community review period where JUSTWYNN users can provide feedback and verify project legitimacy.
+                  Tokens move from Opening Hand to Rising Pot, then to Royal Flush based purely on market cap milestones. Progression fees are paid to The House.
                 </p>
               </div>
             </div>
@@ -134,9 +137,9 @@ export default function GraduationSystemPage() {
                 </div>
               </div>
               <div>
-                <h3 className="text-xl font-semibold text-white mb-3">Graduation Ceremony</h3>
+                <h3 className="text-xl font-semibold text-white mb-3">Game Qualification</h3>
                 <p className="text-[#A6B0BF]">
-                  Successful tokens are officially graduated in a public ceremony, pay their graduation fee to The House, and receive Hall of Fame status.
+                  Royal Flush tokens that reach and sustain $1M+ market cap unlock milestone games. This requires proven, sustained success beyond just tier status.
                 </p>
               </div>
             </div>
