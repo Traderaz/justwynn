@@ -3,7 +3,11 @@
 import Link from "next/link";
 import { useState } from "react";
 
-const Navbar = () => {
+interface NavbarProps {
+  onJoinWaitlist?: () => void;
+}
+
+const Navbar = ({ onJoinWaitlist }: NavbarProps) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navLinks = [
@@ -53,13 +57,14 @@ const Navbar = () => {
           {/* CTA Button */}
           <div className="hidden lg:block">
             <button 
+              onClick={onJoinWaitlist}
               className="bg-gradient-to-r from-casino-green to-emerald-500 hover:from-casino-green/90 hover:to-emerald-500/90 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-casino-green/20"
               style={{ 
                 fontFamily: 'var(--font-inter)',
                 boxShadow: '0 4px 20px rgba(0, 179, 102, 0.25)'
               }}
             >
-              Launch a Token
+              Join The List
             </button>
           </div>
 
@@ -113,13 +118,14 @@ const Navbar = () => {
             ))}
             <div className="pt-4">
               <button 
+                onClick={onJoinWaitlist}
                 className="bg-gradient-to-r from-casino-green to-emerald-500 hover:from-casino-green/90 hover:to-emerald-500/90 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 w-full shadow-lg border border-casino-green/20"
                 style={{ 
                   fontFamily: 'var(--font-inter)',
                   boxShadow: '0 4px 20px rgba(0, 179, 102, 0.25)'
                 }}
               >
-                Launch a Token
+                Join The List
               </button>
             </div>
           </div>

@@ -2,10 +2,12 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { CasinoBackground } from "@/components/ui/casino-background";
 import { PremiumSlotMachine } from "@/components/ui/premium-slot-machine";
 import { PremiumPlayingCard } from "@/components/ui/premium-playing-card";
+import { SimpleWaitlistForm } from "@/components/ui/simple-waitlist-form";
 
 const trustIcons = {
   shield: () => (
@@ -30,6 +32,7 @@ const trustIcons = {
 };
 
 export default function Home() {
+  const [isWaitlistOpen, setIsWaitlistOpen] = useState(false);
 
   return (
     <div className="min-h-screen bg-[#0B0D10]">
@@ -91,18 +94,21 @@ export default function Home() {
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1], delay: 0.7 }}
           >
             <Button
+              onClick={() => setIsWaitlistOpen(true)}
               className="casino-green hover:opacity-90 text-white border border-casino-green h-14 px-10 rounded-2xl font-bold text-lg min-w-[200px] transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
               style={{ fontFamily: 'var(--font-inter)', boxShadow: '0 0 20px rgba(0, 179, 102, 0.3)' }}
             >
-              Launch a Token
+              Join The List
             </Button>
-            <Button
-              variant="outline"
-              className="bg-transparent hover:bg-casino-gold/10 text-[#E9EEF5] border-2 border-casino-gold/30 hover:border-casino-gold h-14 px-10 rounded-2xl font-bold text-lg min-w-[200px] transition-all duration-200 hover:scale-105"
-              style={{ fontFamily: 'var(--font-inter)' }}
-            >
-              Read the Docs
-            </Button>
+            <Link href="/docs">
+              <Button
+                variant="outline"
+                className="bg-transparent hover:bg-casino-gold/10 text-[#E9EEF5] border-2 border-casino-gold/30 hover:border-casino-gold h-14 px-10 rounded-2xl font-bold text-lg min-w-[200px] transition-all duration-200 hover:scale-105"
+                style={{ fontFamily: 'var(--font-inter)' }}
+              >
+                Read the Docs
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Enhanced Trust strip */}
@@ -1021,22 +1027,31 @@ export default function Home() {
             
             <div className="flex flex-row gap-4 justify-center items-center">
               <Button
+                onClick={() => setIsWaitlistOpen(true)}
                 className="casino-green hover:opacity-90 text-white border border-casino-green h-12 px-8 rounded-2xl font-semibold text-base min-w-[160px] transition-all duration-200 shadow-lg hover:shadow-xl hover:scale-105"
                 style={{ fontFamily: 'var(--font-inter)', boxShadow: '0 0 20px rgba(0, 179, 102, 0.3)' }}
               >
-                Launch a Token
+                Join The List
               </Button>
-              <Button
-                variant="outline"
-                className="bg-transparent hover:bg-casino-gold/10 text-[#E9EEF5] border border-casino-gold/30 hover:border-casino-gold h-12 px-8 rounded-2xl font-semibold text-base min-w-[160px] transition-all duration-200 hover:scale-105"
-                style={{ fontFamily: 'var(--font-inter)' }}
-              >
-                Read the Docs
-              </Button>
+              <Link href="/docs">
+                <Button
+                  variant="outline"
+                  className="bg-transparent hover:bg-casino-gold/10 text-[#E9EEF5] border border-casino-gold/30 hover:border-casino-gold h-12 px-8 rounded-2xl font-semibold text-base min-w-[160px] transition-all duration-200 hover:scale-105"
+                  style={{ fontFamily: 'var(--font-inter)' }}
+                >
+                  Read the Docs
+                </Button>
+              </Link>
             </div>
           </motion.div>
         </div>
       </section>
+
+      {/* Waitlist Form Modal */}
+      <SimpleWaitlistForm 
+        isOpen={isWaitlistOpen} 
+        onClose={() => setIsWaitlistOpen(false)} 
+      />
     </div>
   );
 }
