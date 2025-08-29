@@ -11,16 +11,16 @@ export default function QuickstartPage() {
       prevPage={{ title: "Token Tier System", href: "/docs/graduation-system" }}
       nextPage={{ title: "API Reference", href: "/docs/api-reference" }}
     >
-      <div className="space-y-8">
+      <div className="space-y-6 sm:space-y-8">
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">Developer Setup</h2>
-          <p className="text-[#E9EEF5] leading-relaxed mb-6">
+          <h2 className="text-xl sm:text-2xl font-bold text-casino-gold mb-3 sm:mb-4">Developer Setup</h2>
+          <p className="text-[#E9EEF5] leading-relaxed mb-4 sm:mb-6 text-sm sm:text-base">
             Get started building on JUSTWYNN with our developer tools and SDKs.
           </p>
           
-          <div className="bg-[#1a1d23] rounded-xl p-6 border border-casino-green/20">
-            <h3 className="text-xl font-semibold text-casino-green mb-4">🛠️ Prerequisites</h3>
-            <ul className="text-[#E9EEF5] space-y-2">
+          <div className="bg-[#1a1d23] rounded-lg sm:rounded-xl p-4 sm:p-6 border border-casino-green/20">
+            <h3 className="text-lg sm:text-xl font-semibold text-casino-green mb-3 sm:mb-4">🛠️ Prerequisites</h3>
+            <ul className="text-[#E9EEF5] space-y-2 text-xs sm:text-base">
               <li>• Node.js 18+ and npm/yarn</li>
               <li>• Solana CLI tools</li>
               <li>• Anchor framework (for smart contracts)</li>
@@ -30,26 +30,26 @@ export default function QuickstartPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">Installation</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-casino-gold mb-3 sm:mb-4">Installation</h2>
           
-          <div className="space-y-4">
-            <div className="bg-[#0B0D10] rounded-lg p-4 border border-casino-gold/20">
-              <h4 className="text-casino-gold mb-2">Install JUSTWYNN SDK</h4>
-              <code className="text-casino-green text-sm">npm install @justwynn/sdk</code>
+          <div className="space-y-3 sm:space-y-4">
+            <div className="bg-[#0B0D10] rounded-lg p-3 sm:p-4 border border-casino-gold/20">
+              <h4 className="text-casino-gold mb-2 text-xs sm:text-base">Install JUSTWYNN SDK</h4>
+              <code className="text-casino-green text-xs sm:text-sm block overflow-x-auto">npm install @justwynn/sdk</code>
             </div>
             
-            <div className="bg-[#0B0D10] rounded-lg p-4 border border-casino-gold/20">
-              <h4 className="text-casino-gold mb-2">Install Solana Dependencies</h4>
-              <code className="text-casino-green text-sm">npm install @solana/web3.js @solana/wallet-adapter-react</code>
+            <div className="bg-[#0B0D10] rounded-lg p-3 sm:p-4 border border-casino-gold/20">
+              <h4 className="text-casino-gold mb-2 text-xs sm:text-base">Install Solana Dependencies</h4>
+              <code className="text-casino-green text-xs sm:text-sm block overflow-x-auto">npm install @solana/web3.js @solana/wallet-adapter-react</code>
             </div>
           </div>
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">Basic Usage</h2>
+          <h2 className="text-xl sm:text-2xl font-bold text-casino-gold mb-3 sm:mb-4">Basic Usage</h2>
           
-          <div className="bg-[#0B0D10] rounded-lg p-6 border border-casino-green/20">
-            <pre className="text-casino-green text-sm overflow-x-auto">
+          <div className="bg-[#0B0D10] rounded-lg p-3 sm:p-6 border border-casino-green/20">
+            <pre className="text-casino-green text-xs sm:text-sm overflow-x-auto">
 {`import { JustwynnClient } from '@justwynn/sdk';
 import { Connection, clusterApiUrl } from '@solana/web3.js';
 
