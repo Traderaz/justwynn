@@ -174,11 +174,12 @@ export default function FeesStructurePage() {
                       <td className="text-center py-2 text-[#A6B0BF]">Variable</td>
                     </tr>
                     <tr>
-                      <td className="py-2 text-[#A6B0BF]">Liquidity Protection</td>
+                      <td className="py-2 text-[#A6B0BF]">Community Vault</td>
                       <td className="text-center py-2 text-casino-green font-semibold">0.3%</td>
                       <td className="text-center py-2 text-[#A6B0BF]">None</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">Unknown</td>
+                      <td className="text-center py-2 text-[#A6B0BF]">None</td>
                     </tr>
+
                   </tbody>
                 </table>
               </div>
@@ -193,8 +194,8 @@ export default function FeesStructurePage() {
                     <span className="text-casino-gold font-semibold">0.9% vs 1%+</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[#A6B0BF]">Liquidity Protection:</span>
-                    <span className="text-casino-green font-semibold">Only platform</span>
+                    <span className="text-[#A6B0BF]">Community Vault:</span>
+                    <span className="text-casino-green font-semibold">0.3% to holders</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">Sustainable Operations:</span>

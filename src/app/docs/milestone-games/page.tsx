@@ -29,26 +29,18 @@ export default function MilestoneGamesPage() {
                   <span className="text-[#A6B0BF]">Unlock Requirement:</span>
                   <span className="text-casino-green">$1M+ Royal Flush</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-[#A6B0BF]">House Edge:</span>
-                  <span className="text-casino-green">5%</span>
-                </div>
               </div>
             </div>
             
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
               <h3 className="text-xl font-semibold text-casino-gold mb-3">🎲 Lotteries</h3>
               <p className="text-[#E9EEF5] mb-4">
-                Random draws with verifiable fairness using Chainlink VRF. Win exclusive token supply, SOL prizes, and JUSTWYNN ecosystem rewards.
+                Random draws with verifiable fairness using Solana. Win exclusive token supply, SOL prizes, and JUSTWYNN ecosystem rewards.
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-[#A6B0BF]">Unlock Requirement:</span>
                   <span className="text-casino-gold">$1M+ Royal Flush</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-[#A6B0BF]">Entry Method:</span>
-                  <span className="text-casino-gold">Hold tokens</span>
                 </div>
               </div>
             </div>
@@ -62,10 +54,6 @@ export default function MilestoneGamesPage() {
                 <div className="flex justify-between">
                   <span className="text-[#A6B0BF]">Unlock Requirement:</span>
                   <span className="text-red-400">$1M+ Royal Flush</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-[#A6B0BF]">Loyalty Bonus:</span>
-                  <span className="text-red-400">Up to 20%</span>
                 </div>
               </div>
             </div>
