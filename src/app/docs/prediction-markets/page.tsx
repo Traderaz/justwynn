@@ -15,7 +15,7 @@ export default function PredictionMarketsPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">What are Prediction Markets?</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            JUSTWYNN's prediction markets allow users to bet on future outcomes across various categories. From token performance metrics to global events, our prediction markets combine the excitement of betting with the wisdom of crowds to create accurate forecasts.
+            JUSTWYNN&apos;s prediction markets allow users to bet on future outcomes across various categories. From token performance metrics to global events, our prediction markets combine the excitement of betting with the wisdom of crowds to create accurate forecasts.
           </p>
           
           <div className="bg-[#1a1d23] rounded-xl p-6 border border-casino-blue/20 mb-6">
@@ -155,7 +155,7 @@ export default function PredictionMarketsPage() {
               <div className="w-8 h-8 rounded-full bg-casino-blue flex items-center justify-center text-white font-bold text-sm">2</div>
               <div>
                 <h3 className="font-semibold text-[#E9EEF5] mb-2">Place Your Bet</h3>
-                <p className="text-[#A6B0BF]">Choose "YES" or "NO" and enter your bet amount. Your potential payout is calculated based on current market odds.</p>
+                <p className="text-[#A6B0BF]">Choose &quot;YES&quot; or &quot;NO&quot; and enter your bet amount. Your potential payout is calculated based on current market odds.</p>
               </div>
             </div>
             
@@ -184,7 +184,7 @@ export default function PredictionMarketsPage() {
             <div className="bg-[#1a1d23] rounded-xl p-6 border border-casino-green/20">
               <h3 className="text-lg font-semibold text-casino-green mb-3">Odds & Pricing</h3>
               <p className="text-[#A6B0BF] mb-4">
-                Market prices reflect the probability of an outcome occurring. A 70¢ "YES" price means the market believes there's a 70% chance of the event happening.
+                Market prices reflect the probability of an outcome occurring. A 70¢ &quot;YES&quot; price means the market believes there&apos;s a 70% chance of the event happening.
               </p>
               <div className="bg-[#0B0D10] rounded-lg p-4">
                 <div className="text-sm text-[#A6B0BF] mb-2">Example:</div>
@@ -267,7 +267,7 @@ export default function PredictionMarketsPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Getting Started</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Ready to start predicting? Here's what you need to know to get started with JUSTWYNN prediction markets.
+            Ready to start predicting? Here&apos;s what you need to know to get started with JUSTWYNN prediction markets.
           </p>
           
           <div className="bg-[#1a1d23] rounded-xl p-6 border border-casino-blue/20">

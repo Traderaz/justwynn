@@ -15,7 +15,7 @@ export default function FlywheelPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">What is the JUSTWYNN Flywheel?</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            The JUSTWYNN Flywheel represents how every component of our ecosystem feeds into the next, creating a self-reinforcing cycle that grows stronger with each interaction. Unlike traditional platforms where features operate in isolation, JUSTWYNN's flywheel ensures that every action—whether launching a token, trading, or participating in games—strengthens the entire ecosystem.
+            The JUSTWYNN Flywheel represents how every component of our ecosystem feeds into the next, creating a self-reinforcing cycle that grows stronger with each interaction. Unlike traditional platforms where features operate in isolation, JUSTWYNN&apos;s flywheel ensures that every action—whether launching a token, trading, or participating in games—strengthens the entire ecosystem.
           </p>
           
           <div className="bg-[#1a1d23] rounded-xl p-6 border border-casino-green/20 mb-6">
@@ -162,7 +162,7 @@ export default function FlywheelPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-purple-400 mb-3">🔮 Prediction Markets</h3>
                   <p className="text-[#E9EEF5] mb-4">
-                    All prediction market revenue flows directly to $WYNN token holders, creating direct value accrual for the platform's native token.
+                    All prediction market revenue flows directly to $WYNN token holders, creating direct value accrual for the platform&apos;s native token.
                   </p>
                   <div className="bg-[#0B0D10] rounded-lg p-4">
                     <h4 className="font-semibold text-[#E9EEF5] mb-2">$WYNN Value Creation:</h4>
@@ -215,7 +215,7 @@ export default function FlywheelPage() {
             <div className="bg-[#1a1d23] rounded-xl p-6 border border-casino-green/20">
               <h3 className="text-lg font-semibold text-casino-green mb-3">📈 Compounding Growth</h3>
               <p className="text-[#A6B0BF] mb-4">
-                Each cycle through the flywheel increases the platform's momentum. More launches lead to more fees, which fund bigger rewards, attracting even more launches.
+                Each cycle through the flywheel increases the platform&apos;s momentum. More launches lead to more fees, which fund bigger rewards, attracting even more launches.
               </p>
               <div className="text-sm text-[#E9EEF5]">
                 <strong>Result:</strong> Exponential rather than linear growth
@@ -308,7 +308,7 @@ export default function FlywheelPage() {
                 <p className="text-[#A6B0BF] text-sm mb-4">All platform growth directly benefits $WYNN token holders through multiple revenue streams.</p>
                 
                 <h4 className="font-semibold text-[#E9EEF5] mb-2">Community Ownership</h4>
-                <p className="text-[#A6B0BF] text-sm">Transition to community governance while maintaining the flywheel's momentum and effectiveness.</p>
+                <p className="text-[#A6B0BF] text-sm">Transition to community governance while maintaining the flywheel&apos;s momentum and effectiveness.</p>
               </div>
             </div>
           </div>
@@ -317,7 +317,7 @@ export default function FlywheelPage() {
         <div className="bg-casino-green/10 border border-casino-green/20 rounded-xl p-6 mt-8">
           <h3 className="text-lg font-semibold text-casino-green mb-3">💡 Key Insight</h3>
           <p className="text-[#E9EEF5] leading-relaxed">
-            The JUSTWYNN flywheel transforms traditional platform challenges into growth opportunities. Where other platforms struggle with user acquisition costs and retention, JUSTWYNN's flywheel makes each user more valuable to attract and retain, creating sustainable competitive advantages that compound over time.
+            The JUSTWYNN flywheel transforms traditional platform challenges into growth opportunities. Where other platforms struggle with user acquisition costs and retention, JUSTWYNN&apos;s flywheel makes each user more valuable to attract and retain, creating sustainable competitive advantages that compound over time.
           </p>
         </div>
       </div>

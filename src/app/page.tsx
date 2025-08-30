@@ -696,7 +696,7 @@ export default function Home() {
               Prediction Markets — Bet on the Future
             </motion.h2>
             <p className="text-lg text-[#A6B0BF] max-w-4xl mx-auto leading-relaxed">
-              Predict and bet on various metrics across the Solana ecosystem and beyond. From token market caps to holder counts, volume milestones to major market events—powered by JUSTWYNN's advanced prediction market technology.
+              Predict and bet on various metrics across the Solana ecosystem and beyond. From token market caps to holder counts, volume milestones to major market events—powered by JUSTWYNN&apos;s advanced prediction market technology.
             </p>
             <div className="mt-6 p-4 rounded-xl border border-casino-gold/30 bg-casino-gold/10 max-w-3xl mx-auto">
               <p className="text-casino-gold font-semibold text-center">
