@@ -662,6 +662,747 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Prediction Markets Section */}
+      <section id="prediction-markets" className="relative py-20 mt-16">
+        <CasinoBackground variant="section" opacity={0.12} />
+        <div className="relative z-10 container mx-auto px-4">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <motion.h2 
+              className="text-display-lg mb-6" 
+              style={{ 
+                fontFamily: 'var(--font-space-grotesk)',
+                background: 'linear-gradient(135deg, #06B6D4 0%, #0891B2 25%, #00E28A 50%, #06B6D4 75%, #0891B2 100%)',
+                backgroundSize: '300% 300%',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                filter: 'drop-shadow(0 0 30px rgba(6, 182, 212, 0.5))'
+              }}
+              animate={{
+                backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+            >
+              Prediction Markets — Bet on the Future
+            </motion.h2>
+            <p className="text-lg text-[#A6B0BF] max-w-4xl mx-auto leading-relaxed">
+              Predict and bet on various metrics across the Solana ecosystem and beyond. From token market caps to holder counts, volume milestones to major market events—powered by JUSTWYNN's advanced prediction market technology.
+            </p>
+            <div className="mt-6 p-4 rounded-xl border border-casino-gold/30 bg-casino-gold/10 max-w-3xl mx-auto">
+              <p className="text-casino-gold font-semibold text-center">
+                💰 All prediction market revenue flows directly to $WYNN token holders
+              </p>
+            </div>
+          </motion.div>
+
+          {/* Prediction Market Categories */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
+            {[
+              {
+                title: "Token Metrics",
+                description: "Predict market cap, holder count, volume, and price movements for tokens across Solana",
+                icon: "📊",
+                color: "#06B6D4",
+                gradient: "linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(6, 182, 212, 0.05) 100%)",
+                markets: ["Market Cap > $1M", "Holders > 10K", "24h Volume > $100K"]
+              },
+              {
+                title: "Launch Predictions", 
+                description: "Bet on which tokens will reach Royal Flush status and unlock milestone games",
+                icon: "🚀",
+                color: "#00E28A",
+                gradient: "linear-gradient(135deg, rgba(0, 226, 138, 0.15) 0%, rgba(0, 226, 138, 0.05) 100%)",
+                markets: ["Next Royal Flush", "Games Unlock This Week", "Top Performer"]
+              },
+              {
+                title: "Ecosystem Events",
+                description: "Predict major Solana ecosystem developments, partnerships, and market movements",
+                icon: "🌐",
+                color: "#A855F7",
+                gradient: "linear-gradient(135deg, rgba(168, 85, 247, 0.15) 0%, rgba(168, 85, 247, 0.05) 100%)",
+                markets: ["SOL Price Target", "Network Activity", "Major Partnerships"]
+              },
+              {
+                title: "The House Performance",
+                description: "Predict The House growth, jackpot sizes, and weekly competition outcomes",
+                icon: "🏛️",
+                color: "#DC2626",
+                gradient: "linear-gradient(135deg, rgba(220, 38, 38, 0.15) 0%, rgba(220, 38, 38, 0.05) 100%)",
+                markets: ["House Jackpot Size", "Weekly Cup Winner", "Monthly Growth"]
+              },
+              {
+                title: "DeFi Metrics",
+                description: "Bet on TVL milestones, yield farming returns, and protocol performance across Solana",
+                icon: "💰",
+                color: "#F59E0B",
+                gradient: "linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%)",
+                markets: ["TVL Milestones", "Yield Returns", "Protocol Rankings"]
+              },
+              {
+                title: "Global Markets",
+                description: "Predict major world events including politics, sports, and economic developments",
+                icon: "🌍",
+                color: "#EF4444",
+                gradient: "linear-gradient(135deg, rgba(239, 68, 68, 0.15) 0%, rgba(239, 68, 68, 0.05) 100%)",
+                markets: ["Political Events", "Sports Outcomes", "Economic Indicators"]
+              }
+            ].map((category, index) => (
+              <motion.div
+                key={index}
+                className="relative group"
+                initial={{ opacity: 0, y: 30, rotateY: -10 }}
+                whileInView={{ opacity: 1, y: 0, rotateY: 0 }}
+                transition={{ 
+                  duration: 0.8, 
+                  delay: index * 0.1,
+                  type: "spring",
+                  stiffness: 100
+                }}
+                viewport={{ once: true }}
+                whileHover={{ 
+                  scale: 1.05,
+                  rotateY: 5,
+                  z: 50
+                }}
+                style={{ transformStyle: "preserve-3d" }}
+              >
+                <div 
+                  className="p-6 rounded-2xl relative overflow-hidden backdrop-blur-md border-2 transition-all duration-500 h-full min-h-[320px] flex flex-col"
+                  style={{
+                    background: category.gradient,
+                    borderColor: `${category.color}40`,
+                    boxShadow: `0 20px 60px ${category.color}20, 0 0 40px ${category.color}15`
+                  }}
+                >
+                  {/* Animated border glow */}
+                  <motion.div
+                    className="absolute inset-0 rounded-2xl"
+                    style={{
+                      background: `linear-gradient(45deg, transparent, ${category.color}30, transparent)`,
+                      filter: 'blur(1px)'
+                    }}
+                    animate={{
+                      rotate: [0, 360]
+                    }}
+                    transition={{
+                      duration: 10,
+                      repeat: Infinity,
+                      ease: "linear"
+                    }}
+                  />
+                  
+                  {/* Content */}
+                  <div className="relative z-10 flex flex-col h-full">
+                    {/* Icon */}
+                    <div className="flex items-center justify-center mb-4">
+                      <div 
+                        className="w-16 h-16 rounded-full flex items-center justify-center text-3xl relative"
+                        style={{
+                          background: `radial-gradient(circle at 30% 30%, ${category.color}, ${category.color}CC)`,
+                          boxShadow: `0 0 40px ${category.color}80, inset 0 4px 8px rgba(255, 255, 255, 0.2)`
+                        }}
+                      >
+                        {category.icon}
+                      </div>
+                    </div>
+                    
+                    <h3 
+                      className="text-xl font-bold mb-3 text-center"
+                      style={{ 
+                        fontFamily: 'var(--font-space-grotesk)',
+                        color: category.color,
+                        textShadow: `0 0 20px ${category.color}60, 0 0 40px ${category.color}30`
+                      }}
+                    >
+                      {category.title}
+                    </h3>
+                    
+                    <p className="text-[#A6B0BF] leading-relaxed text-center text-sm mb-4 flex-1">
+                      {category.description}
+                    </p>
+                    
+                    {/* Sample Markets */}
+                    <div className="space-y-2">
+                      <div className="text-xs text-center mb-2" style={{ color: category.color }}>
+                        Popular Markets:
+                      </div>
+                      {category.markets.map((market, idx) => (
+                        <div 
+                          key={idx}
+                          className="text-xs px-3 py-1 rounded-full text-center"
+                          style={{
+                            background: `${category.color}20`,
+                            border: `1px solid ${category.color}40`,
+                            color: '#A6B0BF'
+                          }}
+                        >
+                          {market}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+
+          {/* Live Markets Preview */}
+          <motion.div
+            className="max-w-6xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-display-md text-casino-gold mb-4" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
+                Live Prediction Markets
+              </h3>
+              <p className="text-[#A6B0BF] max-w-3xl mx-auto">
+                Real-time betting markets with live odds, powered by community predictions and market data
+              </p>
+            </div>
+
+            {/* Sample Live Markets */}
+            <div className="grid md:grid-cols-2 gap-6">
+              {[
+                {
+                  question: "Will SOL reach $300 by end of 2026?",
+                  yesPrice: "67¢",
+                  noPrice: "33¢",
+                  volume: "$45.2K",
+                  participants: "1,247",
+                  timeLeft: "45 days",
+                  category: "Price Prediction",
+                  trend: "up"
+                },
+                {
+                  question: "Will any JUSTWYNN token reach $10M market cap this month?",
+                  yesPrice: "78¢",
+                  noPrice: "22¢",
+                  volume: "$23.8K",
+                  participants: "892",
+                  timeLeft: "12 days",
+                  category: "Platform Milestone",
+                  trend: "up"
+                },
+                {
+                  question: "Will The House jackpot exceed 1,000 SOL this week?",
+                  yesPrice: "78¢",
+                  noPrice: "22¢",
+                  volume: "$31.5K",
+                  participants: "654",
+                  timeLeft: "3 days",
+                  category: "House Performance",
+                  trend: "up"
+                },
+                {
+                  question: "Will Solana process 100M+ transactions this month?",
+                  yesPrice: "91¢",
+                  noPrice: "9¢",
+                  volume: "$67.1K",
+                  participants: "2,103",
+                  timeLeft: "18 days",
+                  category: "Network Activity",
+                  trend: "stable"
+                }
+              ].map((market, index) => (
+                <motion.div
+                  key={index}
+                  className="p-6 rounded-xl relative group cursor-pointer"
+                  style={{
+                    background: 'linear-gradient(135deg, rgba(6, 182, 212, 0.1) 0%, rgba(6, 182, 212, 0.05) 100%)',
+                    border: '1px solid rgba(6, 182, 212, 0.3)',
+                    boxShadow: '0 8px 32px rgba(6, 182, 212, 0.1)'
+                  }}
+                  whileHover={{
+                    scale: 1.02,
+                    boxShadow: '0 12px 40px rgba(6, 182, 212, 0.2)',
+                    borderColor: 'rgba(6, 182, 212, 0.5)'
+                  }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  {/* Header */}
+                  <div className="flex justify-between items-start mb-4">
+                    <div className="flex-1">
+                      <div className="text-xs text-casino-gold mb-1">{market.category}</div>
+                      <h4 className="text-white font-semibold text-sm leading-tight pr-4">
+                        {market.question}
+                      </h4>
+                    </div>
+                    <div className={`w-2 h-2 rounded-full ${
+                      market.trend === 'up' ? 'bg-casino-green' : 
+                      market.trend === 'down' ? 'bg-casino-red' : 'bg-casino-gold'
+                    }`} />
+                  </div>
+
+                  {/* Betting Options */}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="p-3 rounded-lg bg-casino-green/20 border border-casino-green/30 text-center">
+                      <div className="text-xs text-[#A6B0BF] mb-1">YES</div>
+                      <div className="text-casino-green font-bold text-lg">{market.yesPrice}</div>
+                    </div>
+                    <div className="p-3 rounded-lg bg-casino-red/20 border border-casino-red/30 text-center">
+                      <div className="text-xs text-[#A6B0BF] mb-1">NO</div>
+                      <div className="text-casino-red font-bold text-lg">{market.noPrice}</div>
+                    </div>
+                  </div>
+
+                  {/* Market Stats */}
+                  <div className="flex justify-between text-xs text-[#A6B0BF]">
+                    <div>Volume: <span className="text-white">{market.volume}</span></div>
+                    <div>Traders: <span className="text-white">{market.participants}</span></div>
+                    <div>Ends: <span className="text-white">{market.timeLeft}</span></div>
+                  </div>
+                </motion.div>
+              ))}
+            </div>
+
+
+          </motion.div>
+        </div>
+      </section>
+
+      {/* JUSTWYNN Flywheel Section */}
+      <section id="flywheel" className="relative py-20 mt-16">
+        <CasinoBackground variant="section" opacity={0.08} />
+        <div className="relative z-10 container mx-auto px-4">
+          <motion.div
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <motion.h2 
+              className="text-display-lg mb-6" 
+              style={{ 
+                fontFamily: 'var(--font-space-grotesk)',
+                background: 'linear-gradient(135deg, #00E28A 0%, #06B6D4 25%, #F59E0B 50%, #DC2626 75%, #A855F7 100%)',
+                backgroundSize: '300% 300%',
+                WebkitBackgroundClip: 'text',
+                WebkitTextFillColor: 'transparent',
+                backgroundClip: 'text',
+                filter: 'drop-shadow(0 0 30px rgba(0, 226, 138, 0.5))'
+              }}
+              animate={{
+                backgroundPosition: ['0% 50%', '100% 50%', '0% 50%']
+              }}
+              transition={{
+                duration: 8,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+            >
+              The JUSTWYNN Flywheel
+            </motion.h2>
+            <p className="text-lg text-[#A6B0BF] max-w-4xl mx-auto leading-relaxed">
+              Every component of our ecosystem feeds into the next, creating a self-reinforcing cycle that grows stronger with each interaction.
+            </p>
+          </motion.div>
+
+          {/* Flywheel Diagram */}
+          <motion.div
+            className="max-w-6xl mx-auto mb-16"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
+            <div className="relative">
+              {/* Flywheel Steps */}
+              {/* Flywheel Grid - All Devices */}
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 relative">
+                {[
+                  {
+                    step: "1",
+                    title: "Token Launches",
+                    description: "Users launch tokens with small fees that fund The House",
+                    icon: "🚀",
+                    color: "#00E28A",
+                    position: "top-left"
+                  },
+                  {
+                    step: "2", 
+                    title: "Trading Activity",
+                    description: "0.9% trading fees split between liquidity, operations, and The House",
+                    icon: "💱",
+                    color: "#06B6D4",
+                    position: "top-right"
+                  },
+                  {
+                    step: "3",
+                    title: "Tier Progression",
+                    description: "Tokens advance through tiers, paying progression fees to The House",
+                    icon: "⬆️",
+                    color: "#F59E0B",
+                    position: "middle-right"
+                  },
+                  {
+                    step: "4",
+                    title: "Milestone Games",
+                    description: "Royal Flush tokens unlock games, generating more activity and fees",
+                    icon: "🎯",
+                    color: "#DC2626",
+                    position: "bottom-right"
+                  },
+                  {
+                    step: "5",
+                    title: "Prediction Markets",
+                    description: "All prediction market revenue flows to $WYNN token holders",
+                    icon: "🔮",
+                    color: "#A855F7",
+                    position: "bottom-left"
+                  },
+                  {
+                    step: "6",
+                    title: "The House Grows",
+                    description: "Larger House enables bigger rewards, attracting more users and launches",
+                    icon: "🏛️",
+                    color: "#EF4444",
+                    position: "middle-left"
+                  }
+                ].map((item, index) => (
+                  <div key={index}>
+                    <motion.div
+                      className="relative"
+                      initial={{ opacity: 0, y: 30 }}
+                      whileInView={{ opacity: 1, y: 0 }}
+                      transition={{ 
+                        duration: 0.6, 
+                        delay: index * 0.1 + 0.4
+                      }}
+                      viewport={{ once: true }}
+                    >
+                    <div 
+                      className="p-6 rounded-2xl relative overflow-hidden backdrop-blur-md border-2 transition-all duration-500 h-full min-h-[200px] flex flex-col"
+                      style={{
+                        background: `linear-gradient(135deg, ${item.color}15 0%, ${item.color}05 100%)`,
+                        borderColor: `${item.color}40`,
+                        boxShadow: `0 20px 60px ${item.color}20, 0 0 40px ${item.color}15`
+                      }}
+                    >
+                      {/* Step Number */}
+                      <div 
+                        className="absolute top-2 left-2 sm:-top-3 sm:-left-3 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm z-10"
+                        style={{
+                          background: `linear-gradient(135deg, ${item.color}, ${item.color}CC)`,
+                          boxShadow: `0 0 20px ${item.color}60`
+                        }}
+                      >
+                        {item.step}
+                      </div>
+
+
+
+                      {/* Animated border glow */}
+                      <motion.div
+                        className="absolute inset-0 rounded-2xl"
+                        style={{
+                          background: `linear-gradient(45deg, transparent, ${item.color}30, transparent)`,
+                          filter: 'blur(1px)'
+                        }}
+                        animate={{
+                          rotate: [0, 360]
+                        }}
+                        transition={{
+                          duration: 12 + index * 2,
+                          repeat: Infinity,
+                          ease: "linear"
+                        }}
+                      />
+                      
+                      {/* Content */}
+                      <div className="relative z-10 flex flex-col h-full">
+                        {/* Icon */}
+                        <div className="flex items-center justify-center mb-4">
+                          <div 
+                            className="w-16 h-16 rounded-full flex items-center justify-center text-3xl relative"
+                            style={{
+                              background: `radial-gradient(circle at 30% 30%, ${item.color}, ${item.color}CC)`,
+                              boxShadow: `0 0 40px ${item.color}80, inset 0 4px 8px rgba(255, 255, 255, 0.2)`
+                            }}
+                          >
+                            {item.icon}
+                          </div>
+                        </div>
+                        
+                        <h3 
+                          className="text-xl font-bold mb-3 text-center"
+                          style={{ 
+                            fontFamily: 'var(--font-space-grotesk)',
+                            color: item.color,
+                            textShadow: `0 0 20px ${item.color}60, 0 0 40px ${item.color}30`
+                          }}
+                        >
+                          {item.title}
+                        </h3>
+                        
+                        <p className="text-[#A6B0BF] leading-relaxed text-center text-sm flex-1">
+                          {item.description}
+                        </p>
+                      </div>
+                    </div>
+                    </motion.div>
+
+                    {/* Mobile-only arrow underneath each card (except the last) */}
+                    {index < 5 && (
+                      <div className="sm:hidden flex justify-center my-6">
+                        <motion.div
+                          animate={{ y: [0, 4, 0] }}
+                          transition={{ 
+                            duration: 2, 
+                            repeat: Infinity, 
+                            ease: "easeInOut", 
+                            delay: index * 0.3 
+                          }}
+                        >
+                          <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                            <path 
+                              d="M12 5v14M5 12l7 7 7-7" 
+                              stroke="rgba(0, 226, 138, 0.9)" 
+                              strokeWidth="3" 
+                              strokeLinecap="round" 
+                              strokeLinejoin="round"
+                            />
+                          </svg>
+                        </motion.div>
+                      </div>
+                    )}
+                  </div>
+                ))}
+
+                {/* Mobile-only final cycle arrow */}
+                <div className="sm:hidden flex justify-center my-6">
+                  <motion.div
+                    animate={{ rotate: [0, 360] }}
+                    transition={{ duration: 4, repeat: Infinity, ease: "linear" }}
+                  >
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none">
+                      <path 
+                        d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" 
+                        stroke="rgba(0, 226, 138, 0.9)" 
+                        strokeWidth="3" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                      />
+                      <path 
+                        d="M21 3v5h-5" 
+                        stroke="rgba(0, 226, 138, 0.9)" 
+                        strokeWidth="3" 
+                        strokeLinecap="round" 
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </motion.div>
+                </div>
+
+                {/* Arrows between cards */}
+                {/* Arrows - Tablets and Desktop Only */}
+                <div className="hidden sm:block lg:block">
+                  {/* Arrow 1 -> 2 (between first and second card in top row) */}
+                  <div className="absolute top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ marginLeft: '-16.66%' }}>
+                    <motion.div
+                      animate={{ x: [0, 4, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                    >
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                        <path 
+                          d="M5 12h14M12 5l7 7-7 7" 
+                          stroke="rgba(0, 226, 138, 0.9)" 
+                          strokeWidth="3" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </motion.div>
+                  </div>
+
+                  {/* Arrow 2 -> 3 (between second and third card in top row) */}
+                  <div className="absolute top-[25%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ marginLeft: '16.66%' }}>
+                    <motion.div
+                      animate={{ x: [0, 4, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.3 }}
+                    >
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                        <path 
+                          d="M5 12h14M12 5l7 7-7 7" 
+                          stroke="rgba(0, 226, 138, 0.9)" 
+                          strokeWidth="3" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </motion.div>
+                  </div>
+
+                  {/* Arrow 3 -> 4 (down from third card to bottom right) */}
+                  <div className="absolute top-[45%] transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ right: '16.66%' }}>
+                    <motion.div
+                      animate={{ y: [0, 4, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.6 }}
+                    >
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                        <path 
+                          d="M12 5v14M5 12l7 7 7-7" 
+                          stroke="rgba(0, 226, 138, 0.9)" 
+                          strokeWidth="3" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </motion.div>
+                  </div>
+
+                  {/* Arrow 4 -> 5 (left between bottom right and bottom middle) */}
+                  <div className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ marginLeft: '16.66%' }}>
+                    <motion.div
+                      animate={{ x: [0, -4, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.9 }}
+                    >
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                        <path 
+                          d="M19 12H5M12 19l-7-7 7-7" 
+                          stroke="rgba(0, 226, 138, 0.9)" 
+                          strokeWidth="3" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </motion.div>
+                  </div>
+
+                  {/* Arrow 5 -> 6 (left between bottom middle and bottom left) */}
+                  <div className="absolute top-[75%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ marginLeft: '-16.66%' }}>
+                    <motion.div
+                      animate={{ x: [0, -4, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1.2 }}
+                    >
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                        <path 
+                          d="M19 12H5M12 19l-7-7 7-7" 
+                          stroke="rgba(0, 226, 138, 0.9)" 
+                          strokeWidth="3" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </motion.div>
+                  </div>
+
+                  {/* Arrow 6 -> 1 (up from bottom left back to top left) */}
+                  <div className="absolute top-[45%] transform -translate-x-1/2 -translate-y-1/2 z-30" style={{ left: '16.66%' }}>
+                    <motion.div
+                      animate={{ y: [0, -4, 0] }}
+                      transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 1.5 }}
+                    >
+                      <svg width="36" height="36" viewBox="0 0 24 24" fill="none">
+                        <path 
+                          d="M12 19V5M19 12l-7-7-7 7" 
+                          stroke="rgba(0, 226, 138, 0.9)" 
+                          strokeWidth="3" 
+                          strokeLinecap="round" 
+                          strokeLinejoin="round"
+                        />
+                      </svg>
+                    </motion.div>
+                  </div>
+                </div>
+
+
+            </div>
+          </div>
+          </motion.div>
+
+          {/* Flywheel Benefits */}
+          <motion.div
+            className="max-w-4xl mx-auto"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.6 }}
+            viewport={{ once: true }}
+          >
+            <div className="text-center mb-8">
+              <h3 className="text-display-md text-casino-gold mb-4" style={{ fontFamily: 'var(--font-space-grotesk)' }}>
+                Flywheel Benefits
+              </h3>
+              <p className="text-[#A6B0BF] max-w-3xl mx-auto">
+                Each cycle strengthens the entire ecosystem, creating exponential growth and value for all participants
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: "Compounding Growth",
+                  description: "More launches → More fees → Bigger House → Better rewards → More launches",
+                  icon: "📈",
+                  color: "#00E28A"
+                },
+                {
+                  title: "Network Effects", 
+                  description: "Each new user increases the value and attractiveness for all other users",
+                  icon: "🌐",
+                  color: "#06B6D4"
+                },
+                {
+                  title: "Sustainable Revenue",
+                  description: "Multiple revenue streams ensure The House grows regardless of market conditions",
+                  icon: "♻️",
+                  color: "#F59E0B"
+                }
+              ].map((benefit, index) => (
+                <motion.div
+                  key={index}
+                  className="p-6 rounded-xl text-center"
+                  style={{
+                    background: `linear-gradient(135deg, ${benefit.color}15 0%, ${benefit.color}05 100%)`,
+                    border: `1px solid ${benefit.color}30`,
+                    boxShadow: `0 8px 32px ${benefit.color}10`
+                  }}
+                  whileHover={{
+                    scale: 1.05,
+                    boxShadow: `0 12px 40px ${benefit.color}20`,
+                    borderColor: `${benefit.color}50`
+                  }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.6, delay: 0.8 + index * 0.1 }}
+                  viewport={{ once: true }}
+                >
+                  <div className="text-4xl mb-4">{benefit.icon}</div>
+                  <h4 
+                    className="text-lg font-bold mb-3"
+                    style={{ 
+                      color: benefit.color,
+                      fontFamily: 'var(--font-space-grotesk)'
+                    }}
+                  >
+                    {benefit.title}
+                  </h4>
+                  <p className="text-[#A6B0BF] text-sm leading-relaxed">
+                    {benefit.description}
+                  </p>
+                </motion.div>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
       {/* The House Cup Section */}
       <section id="the-house-cup" className="relative py-20 mt-16">
         <CasinoBackground variant="section" opacity={0.08} />

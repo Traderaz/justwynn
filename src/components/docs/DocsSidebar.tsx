@@ -28,6 +28,8 @@ const sidebarSections: SidebarSection[] = [
     items: [
       { title: 'What is The House?', href: '/docs/the-house' },
       { title: 'Milestone Games', href: '/docs/milestone-games' },
+      { title: 'Prediction Markets', href: '/docs/prediction-markets' },
+      { title: 'The JUSTWYNN Flywheel', href: '/docs/flywheel' },
       { title: 'Graduation System', href: '/docs/graduation-system' }
     ]
   },

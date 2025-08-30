@@ -58,6 +58,22 @@ const docSections: DocSection[] = [
     category: 'About JUSTWYNN'
   },
   {
+    id: 'prediction-markets',
+    title: 'Prediction Markets',
+    description: 'Bet on token metrics, ecosystem events, and global markets with JUSTWYNN\'s advanced prediction markets.',
+    icon: '🔮',
+    href: '/docs/prediction-markets',
+    category: 'About JUSTWYNN'
+  },
+  {
+    id: 'flywheel',
+    title: 'The JUSTWYNN Flywheel',
+    description: 'How every component works together in a self-reinforcing cycle of growth and value creation.',
+    icon: '🔄',
+    href: '/docs/flywheel',
+    category: 'About JUSTWYNN'
+  },
+  {
     id: 'graduation-system',
     title: 'Token Tier System',
     description: 'How tokens progress through Opening Hand, Rising Pot, and Royal Flush tiers.',

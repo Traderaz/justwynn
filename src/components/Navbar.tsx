@@ -14,6 +14,8 @@ const Navbar = ({ onJoinWaitlist }: NavbarProps) => {
     { name: "Home", href: "/" },
     { name: "The House", href: "#the-house" },
     { name: "Milestone Games", href: "#milestone-games" },
+    { name: "Prediction Markets", href: "#prediction-markets" },
+    { name: "Flywheel", href: "#flywheel" },
     { name: "The House Cup", href: "#the-house-cup" },
     { name: "Royal Flush", href: "#hall-of-fame" },
     { name: "FAQ", href: "#faq" },
@@ -39,33 +41,24 @@ const Navbar = ({ onJoinWaitlist }: NavbarProps) => {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-1">
-            {navLinks.map((link) => (
-              <Link
-                key={link.name}
-                href={link.href}
-                className="text-[#E9EEF5]/90 hover:text-casino-gold hover:bg-casino-gold/5 transition-all duration-300 px-4 py-2 rounded-lg text-sm font-medium relative group"
-                style={{ fontFamily: 'var(--font-inter)' }}
-              >
-                {link.name}
-                <span className="absolute inset-x-0 bottom-0 h-0.5 bg-casino-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
-              </Link>
-            ))}
+          <div className="hidden lg:flex items-center justify-center flex-1">
+            <div className="flex items-center space-x-8">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.name}
+                  href={link.href}
+                  className="text-[#E9EEF5]/90 hover:text-casino-gold transition-all duration-300 text-sm font-medium relative group"
+                  style={{ fontFamily: 'var(--font-inter)' }}
+                >
+                  {link.name}
+                  <span className="absolute inset-x-0 bottom-[-6px] h-0.5 bg-casino-gold transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300"></span>
+                </Link>
+              ))}
+            </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="hidden lg:block">
-            <button 
-              onClick={onJoinWaitlist}
-              className="bg-gradient-to-r from-casino-green to-emerald-500 hover:from-casino-green/90 hover:to-emerald-500/90 text-white px-8 py-3 rounded-xl font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl border border-casino-green/20"
-              style={{ 
-                fontFamily: 'var(--font-inter)',
-                boxShadow: '0 4px 20px rgba(0, 179, 102, 0.25)'
-              }}
-            >
-              Join The List
-            </button>
-          </div>
+          {/* Spacer for balanced layout */}
+          <div className="hidden lg:block w-32"></div>
 
           {/* Mobile menu button */}
           <div className="lg:hidden">

@@ -23,6 +23,7 @@
   --casino-green: #00B366;
   --casino-red: #DC2626;
   --casino-gold: #F59E0B;
+  --casino-blue: #06B6D4;
   --emerald: #00E28A;
   --crimson: #E03B3B;
   --gold: #D9B45B;
@@ -224,6 +225,12 @@ body {
 .text-casino-green { color: #00B366; }
 .text-casino-red { color: #DC2626; }
 .text-casino-gold { color: #F59E0B; }
+.text-casino-blue { color: #06B6D4; }
+
+.casino-blue {
+  background: linear-gradient(135deg, #06B6D4 0%, #0891B2 100%);
+  color: white;
+}
 
 /* Vignette effect */
 .vignette {
