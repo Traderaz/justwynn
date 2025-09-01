@@ -65,7 +65,7 @@ export default function Home() {
 
           {/* JUSTWYNN Logo/Sign */}
           <motion.div
-            className="mb-6 sm:mb-8"
+            className="mb-3 sm:mb-4"
             initial={{ opacity: 0, scale: 0.95, y: -10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 0.6, ease: [0.16, 1, 0.3, 1], delay: 0.2 }}
@@ -83,7 +83,7 @@ export default function Home() {
           
           {/* Main headline */}
           <motion.h2 
-            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-8"
+            className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4"
             style={{ fontFamily: 'var(--font-space-grotesk)' }}
             initial={{ opacity: 0, y: 8, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
@@ -97,18 +97,18 @@ export default function Home() {
 
           {/* Subtitle */}
           <motion.p 
-            className="text-base sm:text-xl md:text-2xl lg:text-3xl text-[#A6B0BF] mb-12 sm:mb-20 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"
+            className="text-base sm:text-xl md:text-2xl lg:text-3xl text-[#A6B0BF] mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-2 sm:px-4"
             style={{ fontFamily: 'var(--font-inter)' }}
             initial={{ opacity: 0, y: 8, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1], delay: 0.6 }}
           >
-            The gamified launchpad where every launch fuels The House—and every milestone becomes a community win.
+            The gamified launchpad where every launch fuels The House and every milestone becomes a community win.
           </motion.p>
 
           {/* CTAs */}
           <motion.div 
-            className="flex flex-row gap-4 sm:gap-12 justify-center items-center mb-8 sm:mb-20"
+            className="flex flex-row gap-4 sm:gap-12 justify-center items-center mb-6 sm:mb-12"
             initial={{ opacity: 0, y: 8, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
             transition={{ duration: 0.28, ease: [0.16, 1, 0.3, 1], delay: 0.7 }}
@@ -140,7 +140,7 @@ export default function Home() {
           >
             {[
               { label: "Unlimited Launches", icon: "shield", variant: "audited" },
-              { label: "Mobile-friendly", icon: "solana", variant: "solana" },
+              { label: "Gamified Rewards", icon: "solana", variant: "solana" },
               { label: "Transparent Fees", icon: "shield", variant: "audited" }
             ].map((item, index) => (
               <motion.div 
@@ -1030,7 +1030,7 @@ export default function Home() {
                   {
                     step: "1",
                     title: "Token Launches",
-                    description: "Users launch tokens with small fees that fund The House",
+                    description: "Users launch tokens completely free with no barriers or gatekeepers",
                     icon: "🚀",
                     color: "#00E28A",
                     position: "top-left"
@@ -1097,10 +1097,10 @@ export default function Home() {
                     >
                       {/* Step Number */}
                       <div 
-                        className="absolute top-2 left-2 sm:-top-3 sm:-left-3 w-8 h-8 rounded-full flex items-center justify-center text-white font-bold text-sm z-10"
+                        className="absolute top-3 left-3 sm:top-4 sm:left-4 lg:-top-4 lg:-left-4 w-8 h-8 sm:w-10 sm:h-10 lg:w-16 lg:h-16 rounded-full flex items-center justify-center text-white font-black text-sm sm:text-base lg:text-2xl z-20 border-2 border-white/20"
                         style={{
-                          background: `linear-gradient(135deg, ${item.color}, ${item.color}CC)`,
-                          boxShadow: `0 0 20px ${item.color}60`
+                          background: `linear-gradient(135deg, ${item.color}, ${item.color}DD)`,
+                          boxShadow: `0 0 30px ${item.color}80, 0 0 60px ${item.color}40, inset 0 2px 4px rgba(255,255,255,0.2)`
                         }}
                       >
                         {item.step}

@@ -17,19 +17,19 @@ const spaceGrotesk = Space_Grotesk({
 
 export const metadata: Metadata = {
   title: "JUSTWYNN - Launch → Play → Holders Win",
-  description: "The gamified launchpad where every launch fuels The House—and every milestone becomes a community win.",
+  description: "The gamified launchpad where every launch fuels The House and every milestone becomes a community win.",
   keywords: "DeFi, Solana, token launch, launchpad, gaming, casino, jackpots, crypto",
   authors: [{ name: "JUSTWYNN" }],
   openGraph: {
     title: "JUSTWYNN - Launch → Play → Holders Win",
-    description: "The gamified launchpad where every launch fuels The House—and every milestone becomes a community win.",
+    description: "The gamified launchpad where every launch fuels The House and every milestone becomes a community win.",
     type: "website",
     siteName: "JUSTWYNN",
   },
   twitter: {
     card: "summary_large_image",
     title: "JUSTWYNN - Launch → Play → Holders Win",
-    description: "The gamified launchpad where every launch fuels The House—and every milestone becomes a community win.",
+    description: "The gamified launchpad where every launch fuels The House and every milestone becomes a community win.",
   },
   robots: {
     index: true,

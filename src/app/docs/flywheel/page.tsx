@@ -47,12 +47,12 @@ export default function FlywheelPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-casino-green mb-3">🚀 Token Launches</h3>
                   <p className="text-[#E9EEF5] mb-4">
-                    Users launch tokens with small fees that fund The House. Anyone can create a token instantly with no barriers or gatekeepers.
+                    Users launch tokens completely free with no barriers or gatekeepers. Anyone can create a token instantly.
                   </p>
                   <div className="bg-[#0B0D10] rounded-lg p-4">
                     <h4 className="font-semibold text-[#E9EEF5] mb-2">How it feeds the flywheel:</h4>
                     <ul className="text-[#A6B0BF] text-sm space-y-1">
-                      <li>• Launch fees directly fund The House</li>
+                      <li>• Free launches remove barriers to token creation</li>
                       <li>• More tokens = more trading opportunities</li>
                       <li>• Increased platform activity attracts more users</li>
                       <li>• Creates content for prediction markets</li>
