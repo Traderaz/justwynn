@@ -39,7 +39,7 @@ export default function PredictionMarketsPage() {
               </li>
               <li className="flex items-start gap-3">
                 <span className="text-casino-gold">💰</span>
-                <span><strong>All prediction market revenue flows directly to $WYNN token holders</strong></span>
+                <span><strong>All Prediction Market revenue flows back into $WYNN</strong></span>
               </li>
             </ul>
           </div>

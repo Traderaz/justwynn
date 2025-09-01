@@ -162,7 +162,7 @@ export default function FlywheelPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-purple-400 mb-3">🔮 Prediction Markets</h3>
                   <p className="text-[#E9EEF5] mb-4">
-                    All prediction market revenue flows directly to $WYNN token holders, creating direct value accrual for the platform&apos;s native token.
+                    All Prediction Market revenue flows back into $WYNN, creating direct value accrual for the platform&apos;s native token.
                   </p>
                   <div className="bg-[#0B0D10] rounded-lg p-4">
                     <h4 className="font-semibold text-[#E9EEF5] mb-2">$WYNN Value Creation:</h4>

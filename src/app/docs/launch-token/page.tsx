@@ -15,7 +15,7 @@ export default function LaunchTokenPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Getting Started</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Launching a token on JUSTWYNN is designed to be simple and accessible. There are no gatekeepers, no complex requirements—just a small entry fee and your vision for building a community.
+            Launching a token on JUSTWYNN is designed to be simple and accessible. There are no gatekeepers, no complex requirements, no fees—just your vision for building a community.
           </p>
           
           <div className="bg-[#1a1d23] rounded-xl p-6 border border-casino-green/20">

@@ -108,7 +108,7 @@ const docSections: DocSection[] = [
   {
     id: 'fees-structure',
     title: 'Fees Structure',
-    description: 'Understanding launch fees, trading fees, and rewards.',
+    description: 'Understanding our free launch model, trading fees, and rewards.',
     icon: '💰',
     href: '/docs/fees-structure',
     category: 'Economics'

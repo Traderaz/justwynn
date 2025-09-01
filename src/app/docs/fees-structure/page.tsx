@@ -7,7 +7,7 @@ export default function FeesStructurePage() {
   return (
     <DocPageLayout
       title="Fees Structure"
-      description="Understanding launch fees, trading fees, tier progression fees, and how they fund The House and ecosystem rewards."
+      description="Understanding our free launch model, trading fees, tier progression fees, and how they fund The House and ecosystem rewards."
       prevPage={{ title: "Smart Contracts", href: "/docs/smart-contracts" }}
       nextPage={{ title: "Tokenomics", href: "/docs/tokenomics" }}
     >

@@ -89,7 +89,7 @@ export default function WhatIsJustwynnPage() {
                   <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-green/20">
                     <h3 className="text-xl font-semibold text-casino-green mb-3">🚀 Unlimited Access</h3>
                     <p className="text-[#E9EEF5]">
-                      No gatekeepers, no complex requirements. Anyone can create and launch a token instantly with just a small entry fee.
+                      No gatekeepers, no complex requirements, no fees. Anyone can create and launch a token instantly for free.
                     </p>
                   </div>
                   

@@ -49,9 +49,9 @@ export default function HowItWorksPage() {
           
           <div className="grid gap-6 mb-6">
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-green/20">
-              <h3 className="text-xl font-semibold text-casino-green mb-3">💰 Launch Fees</h3>
+              <h3 className="text-xl font-semibold text-casino-green mb-3">🚀 Free Launches</h3>
               <p className="text-[#E9EEF5]">
-                Every token launch requires a small entry fee that goes directly to The House. This keeps launches accessible while ensuring sustainable growth.
+                Token launches are completely free with no barriers or gatekeepers. Platform sustainability comes from trading activity and tier progressions.
               </p>
             </div>
             

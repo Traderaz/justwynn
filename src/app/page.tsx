@@ -203,7 +203,7 @@ export default function Home() {
             {[
               {
                 title: "Unlimited Launches",
-                description: "Anyone can create and launch a token instantly with a small entry fee. No barriers. No gatekeepers.",
+                description: "Anyone can create and launch a token instantly for free. No barriers. No gatekeepers.",
                 icon: "🚀",
                 color: "#00E28A",
                 gradient: "linear-gradient(135deg, rgba(0, 226, 138, 0.15) 0%, rgba(0, 226, 138, 0.05) 100%)"
@@ -700,7 +700,7 @@ export default function Home() {
             </p>
             <div className="mt-6 p-4 rounded-xl border border-casino-gold/30 bg-casino-gold/10 max-w-3xl mx-auto">
               <p className="text-casino-gold font-semibold text-center">
-                💰 All prediction market revenue flows directly to $WYNN token holders
+                💰 All Prediction Market revenue flows back into $WYNN
               </p>
             </div>
           </motion.div>
@@ -1062,7 +1062,7 @@ export default function Home() {
                   {
                     step: "5",
                     title: "Prediction Markets",
-                    description: "All prediction market revenue flows to $WYNN token holders",
+                    description: "All Prediction Market revenue flows back into $WYNN",
                     icon: "🔮",
                     color: "#A855F7",
                     position: "bottom-left"
