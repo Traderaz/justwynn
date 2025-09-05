@@ -7,7 +7,7 @@ export default function MilestoneGamesPage() {
   return (
     <DocPageLayout
       title="Milestone Games"
-      description="When Royal Flush tokens reach $1M+ market cap, The House unlocks exclusive games and rewards for their holder communities."
+      description="When Royal Flush tokens reach $100K+ market cap, The House unlocks exclusive games and rewards for their holder communities."
       prevPage={{ title: "What is The House?", href: "/docs/the-house" }}
       nextPage={{ title: "Token Tier System", href: "/docs/graduation-system" }}
     >
@@ -15,7 +15,7 @@ export default function MilestoneGamesPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Game Unlocks</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            Only Royal Flush tokens that reach and sustain $1M+ market cap unlock milestone games. The House automatically activates games and competitions for these elite tokens&apos; communities. All games are funded by The House with fair odds and verifiable randomness.
+            Only Royal Flush tokens that reach and sustain $100K+ market cap unlock milestone games. The House automatically activates games and competitions for these elite tokens&apos; communities. All games are funded by The House with fair odds and verifiable randomness.
           </p>
           
           <div className="grid gap-6">
@@ -27,7 +27,7 @@ export default function MilestoneGamesPage() {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-[#A6B0BF]">Unlock Requirement:</span>
-                  <span className="text-casino-green">$1M+ Royal Flush</span>
+                  <span className="text-casino-green">$100K+ Royal Flush</span>
                 </div>
               </div>
             </div>
@@ -40,7 +40,7 @@ export default function MilestoneGamesPage() {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-[#A6B0BF]">Unlock Requirement:</span>
-                  <span className="text-casino-gold">$1M+ Royal Flush</span>
+                  <span className="text-casino-gold">$100K+ Royal Flush</span>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function MilestoneGamesPage() {
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-[#A6B0BF]">Unlock Requirement:</span>
-                  <span className="text-red-400">$1M+ Royal Flush</span>
+                  <span className="text-red-400">$100K+ Royal Flush</span>
                 </div>
               </div>
             </div>

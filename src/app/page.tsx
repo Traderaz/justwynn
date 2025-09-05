@@ -210,7 +210,7 @@ export default function Home() {
               },
               {
                 title: "Three-Tier System", 
-                description: "Tokens progress through Opening Hand (newly created), Rising Pot (below $100K), and Royal Flush (above $100K). Games unlock at $1M+.",
+                description: "Tokens progress through Opening Hand (newly created), Rising Pot (below $100K), and Royal Flush (above $100K). Games unlock at $100K+.",
                 icon: "🎰",
                 color: "#F59E0B",
                 gradient: "linear-gradient(135deg, rgba(245, 158, 11, 0.15) 0%, rgba(245, 158, 11, 0.05) 100%)"
@@ -584,7 +584,7 @@ export default function Home() {
               Milestone Games — Play to Win
             </h2>
             <p className="text-lg text-[#A6B0BF] max-w-4xl mx-auto">
-              When a token reaches $1M+ market cap, it unlocks exclusive games for holders. Only Royal Flush tokens that sustain this milestone activate The House games.
+              When a token reaches $100K+ market cap, it unlocks exclusive games for holders. Only Royal Flush tokens that sustain this milestone activate The House games.
             </p>
           </motion.div>
 
@@ -714,7 +714,7 @@ export default function Home() {
                 icon: "📊",
                 color: "#06B6D4",
                 gradient: "linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(6, 182, 212, 0.05) 100%)",
-                markets: ["Market Cap > $1M", "Holders > 10K", "24h Volume > $100K"]
+                markets: ["Market Cap > $100K", "Holders > 10K", "24h Volume > $100K"]
               },
               {
                 title: "Launch Predictions", 
@@ -1543,8 +1543,8 @@ export default function Home() {
                   },
                   { 
                     icon: "🎰", 
-                    title: "Games Unlock at $1M+", 
-                    description: "Only Royal Flush tokens that reach and sustain $1M+ market cap unlock milestone games and rewards."
+                    title: "Games Unlock at $100K+", 
+                    description: "Only Royal Flush tokens that reach and sustain $100K+ market cap unlock milestone games and rewards."
                   }
                 ].map((item, index) => (
                   <motion.div
@@ -1751,11 +1751,11 @@ export default function Home() {
               },
               {
                 question: "What can I win in Milestone Games?",
-                answer: "Token supply from Royal Flush projects that reach $1M+, SOL prizes from The House, and JUSTWYNN tokens—all distributed with verifiable randomness."
+                answer: "Token supply from Royal Flush projects that reach $100K+, SOL prizes from The House, and JUSTWYNN tokens—all distributed with verifiable randomness."
               },
               {
                 question: "How do tokens progress through tiers?",
-                answer: "Tokens start as Opening Hand (newly created), move to Rising Pot (below $100K), then Royal Flush (above $100K). Games only unlock at $1M+ market cap."
+                answer: "Tokens start as Opening Hand (newly created), move to Rising Pot (below $100K), then Royal Flush (above $100K). Games only unlock at $100K+ market cap."
               },
               {
                 question: "Do you guarantee safety or refunds?",

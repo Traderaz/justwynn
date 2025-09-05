@@ -81,7 +81,7 @@ export default function FeesStructurePage() {
                     <span className="text-red-400">0.01 SOL</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[#A6B0BF]">Games Unlock ($1M+):</span>
+                    <span className="text-[#A6B0BF]">Games Unlock ($100K+):</span>
                     <span className="text-red-400">0.02 SOL</span>
                   </div>
                 </div>
@@ -120,7 +120,7 @@ export default function FeesStructurePage() {
             <div className="p-4 rounded-lg bg-red-400/10 border border-red-400/20">
               <h4 className="font-semibold text-red-400 mb-2">👑 Royal Flush</h4>
               <p className="text-[#E9EEF5] text-sm mb-2">
-                Elite tokens above $100K market cap with premium features. Games unlock at $1M+.
+                Elite tokens above $100K market cap with premium features. Games unlock at $100K+.
               </p>
               <div className="text-xs text-[#A6B0BF]">
                 Requirements: $100K+ market cap • Fees: 0.01 SOL progression fee

@@ -133,7 +133,7 @@ export default function FlywheelPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-casino-red mb-3">🎯 Milestone Games</h3>
                   <p className="text-[#E9EEF5] mb-4">
-                    Royal Flush tokens that reach $1M+ market cap unlock exclusive games for holders. These games generate additional activity, engagement, and revenue streams.
+                    Royal Flush tokens that reach $100K+ market cap unlock exclusive games for holders. These games generate additional activity, engagement, and revenue streams.
                   </p>
                   <div className="bg-[#0B0D10] rounded-lg p-4">
                     <h4 className="font-semibold text-[#E9EEF5] mb-2">Game Benefits:</h4>

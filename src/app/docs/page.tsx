@@ -52,7 +52,7 @@ const docSections: DocSection[] = [
   {
     id: 'milestone-games',
     title: 'Milestone Games',
-    description: 'How games unlock when Royal Flush tokens reach $1M+ market cap.',
+    description: 'How games unlock when Royal Flush tokens reach $100K+ market cap.',
     icon: '🎯',
     href: '/docs/milestone-games',
     category: 'About JUSTWYNN'

@@ -7,7 +7,7 @@ export default function GraduationSystemPage() {
   return (
     <DocPageLayout
       title="Token Tier System"
-      description="How tokens progress through Opening Hand, Rising Pot, and Royal Flush tiers, with games unlocking at $1M+ market cap."
+      description="How tokens progress through Opening Hand, Rising Pot, and Royal Flush tiers, with games unlocking at $100K+ market cap."
       prevPage={{ title: "Milestone Games", href: "/docs/milestone-games" }}
       nextPage={{ title: "Quickstart", href: "/docs/quickstart" }}
     >
@@ -15,7 +15,7 @@ export default function GraduationSystemPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">The Three-Tier System</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            JUSTWYNN uses a poker-themed three-tier system to categorize tokens based on their market performance. Each tier offers different visibility and benefits, with milestone games unlocking only for Royal Flush tokens that reach $1M+ market cap.
+            JUSTWYNN uses a poker-themed three-tier system to categorize tokens based on their market performance. Each tier offers different visibility and benefits, with milestone games unlocking only for Royal Flush tokens that reach $100K+ market cap.
           </p>
           
           <div className="bg-gradient-to-r from-casino-gold/10 to-casino-green/10 rounded-xl p-6 border border-casino-gold/20">
@@ -62,7 +62,7 @@ export default function GraduationSystemPage() {
                 <li>• Premium placement and recognition</li>
                 <li>• Featured across JUSTWYNN platform</li>
                 <li>• Eligible for special partnerships</li>
-                <li>• <strong>Games unlock at $1M+ sustained market cap</strong></li>
+                <li>• <strong>Games unlock at $100K+ sustained market cap</strong></li>
               </ul>
             </div>
           </div>
@@ -71,14 +71,14 @@ export default function GraduationSystemPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Milestone Games Unlock</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            While tier progression provides visibility and recognition, milestone games only unlock for Royal Flush tokens that reach and sustain $1M+ market cap:
+            While tier progression provides visibility and recognition, milestone games only unlock for Royal Flush tokens that reach and sustain $100K+ market cap:
           </p>
           
           <div className="space-y-4">
             <div className="p-4 rounded-lg bg-casino-gold/10 border border-casino-gold/20">
               <h4 className="font-semibold text-casino-gold mb-2">🎰 Game Activation</h4>
               <p className="text-[#E9EEF5] text-sm">
-                Only Royal Flush tokens that reach $1M+ market cap unlock slots, lotteries, and roulette games for their holder communities.
+                Only Royal Flush tokens that reach $100K+ market cap unlock slots, lotteries, and roulette games for their holder communities.
               </p>
             </div>
             
@@ -139,7 +139,7 @@ export default function GraduationSystemPage() {
               <div>
                 <h3 className="text-xl font-semibold text-white mb-3">Game Qualification</h3>
                 <p className="text-[#A6B0BF]">
-                  Royal Flush tokens that reach and sustain $1M+ market cap unlock milestone games. This requires proven, sustained success beyond just tier status.
+                  Royal Flush tokens that reach and sustain $100K+ market cap unlock milestone games. This requires proven, sustained success beyond just tier status.
                 </p>
               </div>
             </div>
