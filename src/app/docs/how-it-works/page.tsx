@@ -27,7 +27,7 @@ export default function HowItWorksPage() {
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 rounded-full bg-casino-gold/20 flex items-center justify-center text-casino-gold font-bold">2</div>
-                <span className="text-[#E9EEF5]">Trade → 0.9% trading fee split feeds The House</span>
+                <span className="text-[#E9EEF5]">Trade → 1% trading fee split feeds The House</span>
               </div>
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 rounded-full bg-red-400/20 flex items-center justify-center text-red-400 font-bold">3</div>
@@ -58,7 +58,7 @@ export default function HowItWorksPage() {
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
               <h3 className="text-xl font-semibold text-casino-gold mb-3">📊 Trading Fees</h3>
               <p className="text-[#E9EEF5]">
-                A competitive 0.9% trading fee is split three ways: liquidity protection (0.3%), platform operations (0.3%), and The House (0.3%).
+                A competitive 1% trading fee is split two ways: liquidity protection (0.25%) and The House (0.75%).
               </p>
             </div>
             

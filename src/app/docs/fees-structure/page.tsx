@@ -39,27 +39,23 @@ export default function FeesStructurePage() {
             </div>
             
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
-              <h3 className="text-xl font-semibold text-casino-gold mb-3">📊 Trading Fee: 0.9%</h3>
+              <h3 className="text-xl font-semibold text-casino-gold mb-3">📊 Trading Fee: 1%</h3>
               <p className="text-[#E9EEF5] mb-4">
-                Competitive trading fee focused on liquidity protection, sustainable operations, and vault growth.
+                Competitive trading fee focused on liquidity protection and vault growth.
               </p>
               <div className="bg-casino-gold/5 rounded-lg p-4 border border-casino-gold/10">
                 <div className="text-sm space-y-1">
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">Total Fee:</span>
-                    <span className="text-casino-gold">0.9%</span>
+                    <span className="text-casino-gold">1%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">To Liquidity Pool:</span>
-                    <span className="text-casino-gold">0.3%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-[#A6B0BF]">To Operations:</span>
-                    <span className="text-casino-gold">0.3%</span>
+                    <span className="text-casino-gold">0.25%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">To The House:</span>
-                    <span className="text-casino-gold">0.3%</span>
+                    <span className="text-casino-gold">0.75%</span>
                   </div>
                 </div>
               </div>
@@ -130,58 +126,51 @@ export default function FeesStructurePage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">Competitive Advantage</h2>
+          <h2 className="text-2xl font-bold text-casino-gold mb-4">Platform Benefits</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            JUSTWYNN offers the most competitive fee structure in the market while providing unique features and sustainable growth.
+            JUSTWYNN provides a transparent fee structure with unique features designed for sustainable ecosystem growth.
           </p>
           
           <div className="grid gap-6">
             <div className="bg-gradient-to-r from-casino-green/10 to-casino-gold/10 rounded-xl p-6 border border-casino-gold/20">
-              <h3 className="text-xl font-semibold text-white mb-4">🏆 Fee Comparison</h3>
-              <div className="overflow-x-auto">
-                <table className="w-full text-sm">
-                  <thead>
-                    <tr className="border-b border-casino-gold/20">
-                      <th className="text-left py-2 text-[#A6B0BF]">Feature</th>
-                      <th className="text-center py-2 text-casino-green">JUSTWYNN</th>
-                      <th className="text-center py-2 text-[#A6B0BF]">Pump.fun</th>
-                      <th className="text-center py-2 text-[#A6B0BF]">Heaven</th>
-                    </tr>
-                  </thead>
-                  <tbody className="space-y-2">
-                    <tr>
-                      <td className="py-2 text-[#A6B0BF]">Launch Fee</td>
-                      <td className="text-center py-2 text-casino-green font-semibold">FREE</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">FREE</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">FREE</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 text-[#A6B0BF]">Trading Fee</td>
-                      <td className="text-center py-2 text-casino-green font-semibold">0.9%</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">1.0%</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">1.25-1.5%</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 text-[#A6B0BF]">Creator Rewards</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">None</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">0.05%</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">0.25-0.5%</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 text-[#A6B0BF]">Graduation Fee</td>
-                      <td className="text-center py-2 text-casino-green font-semibold">0.01 SOL</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">0.015 SOL</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">Variable</td>
-                    </tr>
-                    <tr>
-                      <td className="py-2 text-[#A6B0BF]">Community Vault</td>
-                      <td className="text-center py-2 text-casino-green font-semibold">0.3%</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">None</td>
-                      <td className="text-center py-2 text-[#A6B0BF]">None</td>
-                    </tr>
-
-                  </tbody>
-                </table>
+              <h3 className="text-xl font-semibold text-white mb-4">🏆 JUSTWYNN Fee Structure</h3>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="space-y-4">
+                  <div className="bg-casino-green/5 rounded-lg p-4 border border-casino-green/10">
+                    <h4 className="text-casino-green font-semibold mb-2">🚀 Launch Benefits</h4>
+                    <ul className="text-sm text-[#E9EEF5] space-y-1">
+                      <li>• Completely FREE token launches</li>
+                      <li>• No upfront costs or barriers</li>
+                      <li>• Immediate platform access</li>
+                    </ul>
+                  </div>
+                  <div className="bg-casino-gold/5 rounded-lg p-4 border border-casino-gold/10">
+                    <h4 className="text-casino-gold font-semibold mb-2">📊 Trading Structure</h4>
+                    <ul className="text-sm text-[#E9EEF5] space-y-1">
+                      <li>• 1% competitive trading fee</li>
+                      <li>• 0.25% supports liquidity</li>
+                      <li>• 0.75% grows The House vault</li>
+                    </ul>
+                  </div>
+                </div>
+                <div className="space-y-4">
+                  <div className="bg-red-400/5 rounded-lg p-4 border border-red-400/10">
+                    <h4 className="text-red-400 font-semibold mb-2">🎰 Progression Fees</h4>
+                    <ul className="text-sm text-[#E9EEF5] space-y-1">
+                      <li>• Only 0.01 SOL to reach Royal Flush</li>
+                      <li>• Transparent tier advancement</li>
+                      <li>• Unlocks premium features</li>
+                    </ul>
+                  </div>
+                  <div className="bg-casino-blue/5 rounded-lg p-4 border border-casino-blue/10">
+                    <h4 className="text-casino-blue font-semibold mb-2">🏛️ Community Benefits</h4>
+                    <ul className="text-sm text-[#E9EEF5] space-y-1">
+                      <li>• 0.75% of fees fund community rewards</li>
+                      <li>• Games and competitions</li>
+                      <li>• Sustainable ecosystem growth</li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
 
@@ -190,16 +179,16 @@ export default function FeesStructurePage() {
               <div className="grid md:grid-cols-2 gap-4">
                 <div className="space-y-2">
                   <div className="flex justify-between">
-                    <span className="text-[#A6B0BF]">Lowest Trading Fees:</span>
-                    <span className="text-casino-gold font-semibold">0.9% vs 1%+</span>
+                    <span className="text-[#A6B0BF]">Trading Fee:</span>
+                    <span className="text-casino-gold font-semibold">1% total</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">Community Vault:</span>
-                    <span className="text-casino-green font-semibold">0.3% to holders</span>
+                    <span className="text-casino-green font-semibold">0.25% to LP</span>
                   </div>
                   <div className="flex justify-between">
-                    <span className="text-[#A6B0BF]">Sustainable Operations:</span>
-                    <span className="text-casino-gold font-semibold">0.3% dedicated</span>
+                    <span className="text-[#A6B0BF]">The House Growth:</span>
+                    <span className="text-casino-gold font-semibold">0.75% dedicated</span>
                   </div>
                 </div>
                 <div className="space-y-2">

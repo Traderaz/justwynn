@@ -76,14 +76,13 @@ export default function FlywheelPage() {
                 <div>
                   <h3 className="text-xl font-semibold text-casino-blue mb-3">💱 Trading Activity</h3>
                   <p className="text-[#E9EEF5] mb-4">
-                    0.9% trading fees are split three ways: liquidity providers, platform operations, and The House. This sustainable fee structure ensures all stakeholders benefit from increased trading volume.
+                    1% trading fees are split two ways: liquidity providers and The House. This sustainable fee structure ensures all stakeholders benefit from increased trading volume.
                   </p>
                   <div className="bg-[#0B0D10] rounded-lg p-4">
                     <h4 className="font-semibold text-[#E9EEF5] mb-2">Revenue Distribution:</h4>
                     <ul className="text-[#A6B0BF] text-sm space-y-1">
-                      <li>• 0.3% to Liquidity Providers</li>
-                      <li>• 0.3% to Platform Operations</li>
-                      <li>• 0.3% to The House</li>
+                      <li>• 0.25% to Liquidity Providers</li>
+                      <li>• 0.75% to The House</li>
                     </ul>
                   </div>
                 </div>

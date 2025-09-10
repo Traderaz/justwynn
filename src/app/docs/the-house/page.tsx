@@ -61,25 +61,21 @@ export default function TheHousePage() {
                 </div>
               </div>
               <p className="text-[#E9EEF5] mb-4">
-                A competitive 0.9% trading fee is collected on all token trades. This fee is split three ways: liquidity protection, platform operations, and The House growth.
+                A competitive 1% trading fee is collected on all token trades. This fee is split two ways: liquidity protection and The House growth.
               </p>
               <div className="bg-casino-gold/5 rounded-lg p-4 border border-casino-gold/10">
                 <div className="grid grid-cols-2 gap-4 text-sm">
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">Total Fee:</span>
-                    <span className="text-casino-gold">0.9%</span>
+                    <span className="text-casino-gold">1%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">To Liquidity:</span>
-                    <span className="text-casino-gold">0.3%</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-[#A6B0BF]">To Operations:</span>
-                    <span className="text-casino-gold">0.3%</span>
+                    <span className="text-casino-gold">0.25%</span>
                   </div>
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">To The House:</span>
-                    <span className="text-casino-gold">0.3%</span>
+                    <span className="text-casino-gold">0.75%</span>
                   </div>
                 </div>
               </div>

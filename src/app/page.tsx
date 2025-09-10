@@ -385,7 +385,7 @@ export default function Home() {
               whileInView={{ opacity: 1 }}
               transition={{ delay: 0.3, duration: 0.8 }}
             >
-              The House is our constantly growing, community-powered bankroll. It&apos;s funded by trading volume (0.9% trading fee with 0.3% to The House), and tier progression fees as tokens advance through Opening Hand, Rising Pot, and Royal Flush. We only fund games and rewards from inflows/yield—not principal—so The House compounds over time.
+              The House is our constantly growing, community-powered bankroll. It&apos;s funded by trading volume (1% trading fee with 0.75% to The House), and tier progression fees as tokens advance through Opening Hand, Rising Pot, and Royal Flush. We only fund games and rewards from inflows/yield—not principal—so The House compounds over time.
             </motion.p>
           </motion.div>
 
@@ -402,13 +402,13 @@ export default function Home() {
                 description: "No upfront costs"
               },
               {
-                title: "0.9% Trading Fee", 
-                subtitle: "Split 3-ways for sustainability",
+                title: "1% Trading Fee", 
+                subtitle: "Split 2-ways for sustainability",
                 icon: "💱",
                 color: "#F59E0B",
                 accentColor: "#D97706",
-                stat: "0.3% × 3",
-                description: "Liquidity + Ops + House"
+                stat: "0.25% + 0.75%",
+                description: "Liquidity + House"
               },
               {
                 title: "Tier Progression Fee",
@@ -1038,7 +1038,7 @@ export default function Home() {
                   {
                     step: "2", 
                     title: "Trading Activity",
-                    description: "0.9% trading fees split between liquidity, operations, and The House",
+                    description: "1% trading fees split between liquidity and The House",
                     icon: "💱",
                     color: "#06B6D4",
                     position: "top-right"
@@ -1747,7 +1747,7 @@ export default function Home() {
             {[
               {
                 question: "How does The House grow?",
-                answer: "From trading fee splits (0.3% of 0.9% total) and tier progression fees. We fund games from inflows/yield—not principal—so The House compounds over time."
+                answer: "From trading fee splits (0.75% of 1% total) and tier progression fees. We fund games from inflows/yield—not principal—so The House compounds over time."
               },
               {
                 question: "What can I win in Milestone Games?",
