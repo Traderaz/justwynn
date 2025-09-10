@@ -9,7 +9,7 @@ export default function MilestoneGamesPage() {
       title="Milestone Games"
       description="When Royal Flush tokens reach $100K+ market cap, The House unlocks exclusive games and rewards for their holder communities."
       prevPage={{ title: "What is The House?", href: "/docs/the-house" }}
-      nextPage={{ title: "Token Tier System", href: "/docs/graduation-system" }}
+      nextPage={{ title: "Prediction Markets", href: "/docs/prediction-markets" }}
     >
       <div className="space-y-8">
         <section>

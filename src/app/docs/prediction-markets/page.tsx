@@ -9,7 +9,7 @@ export default function PredictionMarketsPage() {
       title="Prediction Markets"
       description="Comprehensive guide to JUSTWYNN's prediction markets - bet on token metrics, ecosystem events, and global markets."
       prevPage={{ title: "Milestone Games", href: "/docs/milestone-games" }}
-      nextPage={{ title: "The House Cup", href: "/docs/house-cup" }}
+      nextPage={{ title: "The JUSTWYNN Flywheel", href: "/docs/flywheel" }}
     >
       <div className="space-y-8">
         <section>

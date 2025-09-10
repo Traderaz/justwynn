@@ -6,9 +6,9 @@ import DocPageLayout from '@/components/docs/DocPageLayout';
 export default function GraduationSystemPage() {
   return (
     <DocPageLayout
-      title="Token Tier System"
+      title="Graduation System"
       description="How tokens progress through Opening Hand, Rising Pot, and Royal Flush tiers, with games unlocking at $100K+ market cap."
-      prevPage={{ title: "Milestone Games", href: "/docs/milestone-games" }}
+      prevPage={{ title: "The JUSTWYNN Flywheel", href: "/docs/flywheel" }}
       nextPage={{ title: "Quickstart", href: "/docs/quickstart" }}
     >
       <div className="space-y-8">

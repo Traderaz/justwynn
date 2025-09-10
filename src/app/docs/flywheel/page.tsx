@@ -9,7 +9,7 @@ export default function FlywheelPage() {
       title="The JUSTWYNN Flywheel"
       description="Understanding how every component of JUSTWYNN works together in a self-reinforcing cycle of growth and value creation."
       prevPage={{ title: "Prediction Markets", href: "/docs/prediction-markets" }}
-      nextPage={{ title: "The House Cup", href: "/docs/house-cup" }}
+      nextPage={{ title: "Graduation System", href: "/docs/graduation-system" }}
     >
       <div className="space-y-8">
         <section>
