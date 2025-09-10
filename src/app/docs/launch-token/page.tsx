@@ -184,40 +184,11 @@ export default function LaunchTokenPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-bold text-casino-gold mb-4">Best Practices</h2>
-          
-          <div className="space-y-4">
-            <div className="p-4 rounded-lg bg-green-500/10 border border-green-500/20">
-              <h4 className="font-semibold text-green-400 mb-2">✅ Do</h4>
-              <ul className="text-[#E9EEF5] text-sm space-y-1">
-                <li>• Be transparent about your project&apos;s goals and roadmap</li>
-                <li>• Engage actively with your community</li>
-                <li>• Focus on building real value and utility</li>
-                <li>• Celebrate milestones and share progress updates</li>
-              </ul>
-            </div>
-            
-            <div className="p-4 rounded-lg bg-red-500/10 border border-red-500/20">
-              <h4 className="font-semibold text-red-400 mb-2">❌ Don&apos;t</h4>
-              <ul className="text-[#E9EEF5] text-sm space-y-1">
-                <li>• Make unrealistic promises about returns or guarantees</li>
-                <li>• Engage in market manipulation or wash trading</li>
-                <li>• Abandon your project after launch</li>
-                <li>• Spam other communities or engage in aggressive marketing</li>
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">Need Help?</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-4">
             Our community is here to support you throughout your launch journey:
           </p>
           <div className="flex flex-wrap gap-4">
-            <a href="#" className="px-4 py-2 bg-casino-green/10 text-casino-green rounded-lg hover:bg-casino-green/20 transition-colors">
-              Join Discord
-            </a>
             <a href="#" className="px-4 py-2 bg-casino-gold/10 text-casino-gold rounded-lg hover:bg-casino-gold/20 transition-colors">
               Read FAQ
             </a>

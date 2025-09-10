@@ -33,25 +33,6 @@ export default function TheHousePage() {
           </p>
           
           <div className="grid gap-6">
-            <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-green/20">
-              <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 rounded-full bg-casino-green/20 flex items-center justify-center text-2xl">🚀</div>
-                <div>
-                  <h3 className="text-xl font-semibold text-casino-green">Launch Fees</h3>
-                  <p className="text-[#A6B0BF] text-sm">Low barrier entry for creators</p>
-                </div>
-              </div>
-              <p className="text-[#E9EEF5] mb-4">
-                Token launches are completely FREE on JUSTWYNN. We believe in zero barriers to entry, making token creation accessible to everyone regardless of their financial situation.
-              </p>
-              <div className="bg-casino-green/5 rounded-lg p-4 border border-casino-green/10">
-                <div className="flex justify-between items-center">
-                  <span className="text-[#A6B0BF]">Launch Fee:</span>
-                  <span className="text-casino-green font-semibold">FREE</span>
-                </div>
-              </div>
-            </div>
-            
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
               <div className="flex items-center gap-4 mb-4">
                 <div className="w-12 h-12 rounded-full bg-casino-gold/20 flex items-center justify-center text-2xl">📊</div>
@@ -95,7 +76,7 @@ export default function TheHousePage() {
               <div className="bg-red-400/5 rounded-lg p-4 border border-red-400/10">
                 <div className="flex justify-between items-center">
                   <span className="text-[#A6B0BF]">Graduation Fee:</span>
-                  <span className="text-red-400 font-semibold">Variable (based on market cap)</span>
+                  <span className="text-red-400 font-semibold">0.01 SOL</span>
                 </div>
               </div>
             </div>
@@ -119,10 +100,6 @@ export default function TheHousePage() {
                   <span className="text-[#A6B0BF]">Prize Pool Source:</span>
                   <span className="text-casino-green">House inflows</span>
                 </div>
-                <div className="flex justify-between">
-                  <span className="text-[#A6B0BF]">House Edge:</span>
-                  <span className="text-casino-green">5-10%</span>
-                </div>
               </div>
             </div>
             
@@ -131,27 +108,17 @@ export default function TheHousePage() {
               <p className="text-[#E9EEF5] mb-4">
                 The House Cup and other weekly competitions distribute rewards to the strongest communities based on various metrics.
               </p>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-[#A6B0BF]">Weekly Pool:</span>
-                  <span className="text-casino-gold">~2% of weekly inflows</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-[#A6B0BF]">Distribution:</span>
-                  <span className="text-casino-gold">Merit-based</span>
-                </div>
-              </div>
             </div>
             
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-red-400/20">
               <h3 className="text-xl font-semibold text-red-400 mb-3">💰 Jackpots & Special Events</h3>
               <p className="text-[#E9EEF5] mb-4">
-                Large jackpots and special event prizes are funded from The House&apos;s accumulated reserves and yield generation.
+                Large jackpots and special event prizes are funded from The House&apos;s accumulated reserves.
               </p>
               <div className="space-y-2 text-sm">
                 <div className="flex justify-between">
                   <span className="text-[#A6B0BF]">Funding Source:</span>
-                  <span className="text-red-400">Yield + reserves</span>
+                  <span className="text-red-400">The House</span>
                 </div>
                 <div className="flex justify-between">
                   <span className="text-[#A6B0BF]">Frequency:</span>

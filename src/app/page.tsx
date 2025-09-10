@@ -1603,13 +1603,9 @@ export default function Home() {
                         {item.title}
                       </h3>
                       <p className="text-[#A6B0BF] leading-relaxed">
-                        {item.description?.includes('JUSTWYNN') ? (
-                          <span dangerouslySetInnerHTML={{
-                            __html: item.description.replace('JUSTWYNN', '<span style="color: #00B366; text-shadow: 0 0 10px rgba(0, 179, 102, 0.5);">JUSTWYNN</span>')
-                          }} />
-                        ) : (
-                          item.description
-                        )}
+                        <span dangerouslySetInnerHTML={{
+                          __html: item.description
+                        }} />
                       </p>
                     </div>
                   </motion.div>

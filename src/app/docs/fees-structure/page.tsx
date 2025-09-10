@@ -62,7 +62,7 @@ export default function FeesStructurePage() {
             </div>
             
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-red-400/20">
-              <h3 className="text-xl font-semibold text-red-400 mb-3">🎰 Tier Progression Fees: Variable</h3>
+              <h3 className="text-xl font-semibold text-red-400 mb-3">🎰 Tier Progression Fees: 0.01 SOL</h3>
               <p className="text-[#E9EEF5] mb-4">
                 Fees paid when tokens advance through our three-tier system: Opening Hand → Rising Pot → Royal Flush.
               </p>
@@ -75,10 +75,6 @@ export default function FeesStructurePage() {
                   <div className="flex justify-between">
                     <span className="text-[#A6B0BF]">Rising Pot → Royal Flush ($100K):</span>
                     <span className="text-red-400">0.01 SOL</span>
-                  </div>
-                  <div className="flex justify-between">
-                    <span className="text-[#A6B0BF]">Games Unlock ($100K+):</span>
-                    <span className="text-red-400">0.02 SOL</span>
                   </div>
                 </div>
               </div>

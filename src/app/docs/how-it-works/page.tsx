@@ -44,17 +44,10 @@ export default function HowItWorksPage() {
         <section>
           <h2 className="text-2xl font-bold text-casino-gold mb-4">The House: Community Bankroll</h2>
           <p className="text-[#E9EEF5] leading-relaxed mb-6">
-            The House is the beating heart of JUSTWYNN—a constantly growing pool that powers all rewards, games, and competitions. It&apos;s funded by three main sources:
+            The House is the beating heart of JUSTWYNN—a constantly growing pool that powers all rewards, games, and competitions. It&apos;s funded by two main sources:
           </p>
           
           <div className="grid gap-6 mb-6">
-            <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-green/20">
-              <h3 className="text-xl font-semibold text-casino-green mb-3">🚀 Free Launches</h3>
-              <p className="text-[#E9EEF5]">
-                Token launches are completely free with no barriers or gatekeepers. Platform sustainability comes from trading activity and tier progressions.
-              </p>
-            </div>
-            
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20">
               <h3 className="text-xl font-semibold text-casino-gold mb-3">📊 Trading Fees</h3>
               <p className="text-[#E9EEF5]">
@@ -108,7 +101,7 @@ export default function HowItWorksPage() {
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-casino-gold/20 text-center">
               <div className="text-4xl mb-4">🎲</div>
               <h3 className="text-lg font-semibold text-casino-gold mb-2">Lotteries</h3>
-              <p className="text-[#A6B0BF] text-sm">Random draws with verifiable fairness using Chainlink VRF</p>
+              <p className="text-[#A6B0BF] text-sm">Random draws with verifiable fairness</p>
             </div>
             <div className="p-6 rounded-xl bg-[#1a1d23] border border-red-400/20 text-center">
               <div className="text-4xl mb-4">🎯</div>

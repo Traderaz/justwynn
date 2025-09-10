@@ -34,7 +34,6 @@ export default function SmartContractsPage() {
               <ul className="text-[#E9EEF5] space-y-2">
                 <li>• Multi-signature governance for critical functions</li>
                 <li>• Time-locked upgrades with community review</li>
-                <li>• Chainlink VRF for verifiable randomness</li>
                 <li>• Comprehensive audit by leading security firms</li>
               </ul>
             </div>
